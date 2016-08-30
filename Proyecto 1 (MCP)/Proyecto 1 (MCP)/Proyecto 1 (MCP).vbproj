@@ -194,6 +194,33 @@
   <ItemGroup>
     <None Include="Resources\Combat_Mastery.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Defense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Counterattack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windmill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assault_Slash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword_Mastery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Axe_Mastery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blunt_Mastery.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
