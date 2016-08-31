@@ -221,6 +221,15 @@
   <ItemGroup>
     <None Include="Resources\Blunt_Mastery.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evasion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Critical_Hit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shield_Mastery.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

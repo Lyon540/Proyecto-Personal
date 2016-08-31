@@ -591,13 +591,423 @@
         SwMElfSkill = 0
         SwMElfStat = 0
         Select Case Cbo_SwMElf.SelectedIndex
-            'Beggin with the Assault Slash Skill for Elf'
+            'Beggin with the Sword Mastery Skill for Elf'
             'Skill & Stat no Changes with races'
             Case 0
                 If Btn_Confirm_SwMElf.Created Then
-                    AsaSElfSkill = SwMElfSkill + 30
-                    AsaSElfStat = SwMElfStat + 0
+                    SwMElfSkill = SwMElfSkill + 20
+                    SwMElfStat = SwMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 25
+                    SwMElfStat = SwMElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 30
+                    SwMElfStat = SwMElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 35
+                    SwMElfStat = SwMElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 40
+                    SwMElfStat = SwMElfStat + 0
+                End If
+            Case 5
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 45
+                    SwMElfStat = SwMElfStat + 0
+                End If
+            Case 6
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 50
+                    SwMElfStat = SwMElfStat + 0.1
+                End If
+            Case 7
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 60
+                    SwMElfStat = SwMElfStat + 0.2
+                End If
+            Case 8
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 70
+                    SwMElfStat = SwMElfStat + 0.3
+                End If
+            Case 9
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 80
+                    SwMElfStat = SwMElfStat + 0.4
+                End If
+            Case 10
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 100
+                    SwMElfStat = SwMElfStat + 0.6
+                End If
+            Case 11
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 110
+                    SwMElfStat = SwMElfStat + 0.8
+                End If
+            Case 12
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 120
+                    SwMElfStat = SwMElfStat + 1.1
+                End If
+            Case 13
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 140
+                    SwMElfStat = SwMElfStat + 1.4
+                End If
+            Case 14
+                If Btn_Confirm_SwMElf.Created Then
+                    SwMElfSkill = SwMElfSkill + 160
+                    SwMElfStat = SwMElfStat + 1.9
                 End If
         End Select
+    End Sub
+
+    Private Sub Btn_Confirm_AxMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_AxMElf.Click
+        AxMElfSkill = 0
+        AxMElfStat = 0
+        Select Case Cbo_AxMElf.SelectedIndex
+            'Beggin with the Axe Mastery Skill for Elf'
+            'Skill & Stat no Changes with races'
+            Case 0
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 20
+                    AxMElfStat = AxMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 25
+                    AxMElfStat = AxMElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 30
+                    AxMElfStat = AxMElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 35
+                    AxMElfStat = AxMElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 40
+                    AxMElfStat = AxMElfStat + 0
+                End If
+            Case 5
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 45
+                    AxMElfStat = AxMElfStat + 0
+                End If
+            Case 6
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 50
+                    AxMElfStat = AxMElfStat + 0.5
+                End If
+            Case 7
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 60
+                    AxMElfStat = AxMElfStat + 1
+                End If
+            Case 8
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 70
+                    AxMElfStat = AxMElfStat + 1.5
+                End If
+            Case 9
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 80
+                    AxMElfStat = AxMElfStat + 2
+                End If
+            Case 10
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 100
+                    AxMElfStat = AxMElfStat + 3
+                End If
+            Case 11
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 110
+                    AxMElfStat = AxMElfStat + 4
+                End If
+            Case 12
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 120
+                    AxMElfStat = AxMElfStat + 5.5
+                End If
+            Case 13
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 140
+                    AxMElfStat = AxMElfStat + 7
+                End If
+            Case 14
+                If Btn_Confirm_AxMElf.Created Then
+                    AxMElfSkill = AxMElfSkill + 160
+                    AxMElfStat = AxMElfStat + 9.5
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_BlMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_BlMElf.Click
+        BlMElfSkill = 0
+        BlMElfStat = 0
+        Select Case Cbo_BlMElf.SelectedIndex
+            'Beggin with the Blunt Mastery Skill for Elf'
+            'Skill & Stat no Changes with races'
+            Case 0
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 20
+                    BlMElfStat = BlMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 25
+                    BlMElfStat = BlMElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 30
+                    BlMElfStat = BlMElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 35
+                    BlMElfStat = BlMElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 40
+                    BlMElfStat = BlMElfStat + 0
+                End If
+            Case 5
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 45
+                    BlMElfStat = BlMElfStat + 0
+                End If
+            Case 6
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 50
+                    BlMElfStat = BlMElfStat + 1
+                End If
+            Case 7
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 60
+                    BlMElfStat = BlMElfStat + 2
+                End If
+            Case 8
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 70
+                    BlMElfStat = BlMElfStat + 3
+                End If
+            Case 9
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 80
+                    BlMElfStat = BlMElfStat + 4
+                End If
+            Case 10
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 100
+                    BlMElfStat = BlMElfStat + 6
+                End If
+            Case 11
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 110
+                    BlMElfStat = BlMElfStat + 8
+                End If
+            Case 12
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 120
+                    BlMElfStat = BlMElfStat + 11
+                End If
+            Case 13
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 140
+                    BlMElfStat = BlMElfStat + 14
+                End If
+            Case 14
+                If Btn_Confirm_BlMElf.Created Then
+                    BlMElfSkill = BlMElfSkill + 160
+                    BlMElfStat = BlMElfStat + 19
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_EvaElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_EvaElf.Click
+        EvaElfSkill = 0
+        EvaElfStat = 0
+        Select Case Cbo_EvaElf.SelectedIndex
+            'Beggin with the Evasion Skill for Elf'
+            'Skill & Stat no Changes with races'
+            Case 0
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 0
+                    EvaElfStat = EvaElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 5
+                    EvaElfStat = EvaElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 10
+                    EvaElfStat = EvaElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 15
+                    EvaElfStat = EvaElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 25
+                    EvaElfStat = EvaElfStat + 0
+                End If
+            Case 5
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 40
+                    EvaElfStat = EvaElfStat + 0
+                End If
+            Case 6
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 60
+                    EvaElfStat = EvaElfStat + 0.1
+                End If
+            Case 7
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 80
+                    EvaElfStat = EvaElfStat + 0.2
+                End If
+            Case 8
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 100
+                    EvaElfStat = EvaElfStat + 0.3
+                End If
+            Case 9
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 130
+                    EvaElfStat = EvaElfStat + 0.4
+                End If
+            Case 10
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 160
+                    EvaElfStat = EvaElfStat + 0.5
+                End If
+            Case 11
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 190
+                    EvaElfStat = EvaElfStat + 0.6
+                End If
+            Case 12
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 220
+                    EvaElfStat = EvaElfStat + 0.7
+                End If
+            Case 13
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 250
+                    EvaElfStat = EvaElfStat + 0.8
+                End If
+            Case 14
+                If Btn_Confirm_EvaElf.Created Then
+                    EvaElfSkill = EvaElfSkill + 300
+                    EvaElfStat = EvaElfStat + 0.9
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_CrHElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_CrHElf.Click
+        CrHElfSkill = 0
+        CrHElfStat = 0
+        Select Case Cbo_CrHElf.SelectedIndex
+            'Beggin with the Critical Hit Skill for Elf'
+            'Skill & Stat no Changes with races'
+            Case 0
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 10
+                    CrHElfStat = CrHElfStat + 1.5
+                End If
+            Case 1
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 20
+                    CrHElfStat = CrHElfStat + 3
+                End If
+            Case 2
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 30
+                    CrHElfStat = CrHElfStat + 4.5
+                End If
+            Case 3
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 40
+                    CrHElfStat = CrHElfStat + 6
+                End If
+            Case 4
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 50
+                    CrHElfStat = CrHElfStat + 7.5
+                End If
+            Case 5
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 60
+                    CrHElfStat = CrHElfStat + 9
+                End If
+            Case 6
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 70
+                    CrHElfStat = CrHElfStat + 10.5
+                End If
+            Case 7
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 80
+                    CrHElfStat = CrHElfStat + 12
+                End If
+            Case 8
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 90
+                    CrHElfStat = CrHElfStat + 13.5
+                End If
+            Case 9
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 100
+                    CrHElfStat = CrHElfStat + 15
+                End If
+            Case 10
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 110
+                    CrHElfStat = CrHElfStat + 16.5
+                End If
+            Case 11
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 120
+                    CrHElfStat = CrHElfStat + 18
+                End If
+            Case 12
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 130
+                    CrHElfStat = CrHElfStat + 19.5
+                End If
+            Case 13
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 140
+                    CrHElfStat = CrHElfStat + 21
+                End If
+            Case 14
+                If Btn_Confirm_CrHElf.Created Then
+                    CrHElfSkill = CrHElfSkill + 150
+                    CrHElfStat = CrHElfStat + 22.5
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_ShMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_ShMElf.Click
+
     End Sub
 End Class
