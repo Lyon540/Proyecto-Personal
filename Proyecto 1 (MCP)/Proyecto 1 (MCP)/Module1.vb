@@ -41,4 +41,7 @@
     'Shield Mastery'
     Public ShMElfSkill As Integer
     Public ShMElfStat As Double
+    'Heavy Armor Mastery'
+    Public HeMElfSkill As Integer
+    Public HeMElfStat As Double
 End Module

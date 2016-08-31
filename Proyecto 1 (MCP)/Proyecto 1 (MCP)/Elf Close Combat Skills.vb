@@ -1008,6 +1008,170 @@
     End Sub
 
     Private Sub Btn_Confirm_ShMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_ShMElf.Click
+        ShMElfSkill = 0
+        ShMElfStat = 0
+        Select Case Cbo_ShMElf.SelectedIndex
+            'Beggin with the Shield Mastery Skill for Elf'
+            'Skill & Stat no Changes with races'
+            Case 0
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 10
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 15
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 20
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 30
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 35
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 5
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 40
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 6
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 50
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 7
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 60
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 8
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 65
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 9
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 70
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 10
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 75
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 11
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 80
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 12
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 85
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 13
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 90
+                    ShMElfStat = ShMElfStat + 0
+                End If
+            Case 14
+                If Btn_Confirm_ShMElf.Created Then
+                    ShMElfSkill = ShMElfSkill + 100
+                    ShMElfStat = ShMElfStat + 0
+                End If
+        End Select
+    End Sub
 
+    Private Sub Btn_Confirm_HeMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_HeMElf.Click
+        HeMElfSkill = 0
+        HeMElfStat = 0
+        Select Case Cbo_HeMElf.SelectedIndex
+            'Beggin with the Heavy Armor Mastery Skill for Elf'
+            'Skill & Stat no Changes with races'
+            Case 0
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 2
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 5
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 10
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 15
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 20
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 5
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 25
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 6
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 30
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 7
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 35
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 8
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 40
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 9
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 45
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 10
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 50
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 11
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 55
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 12
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 60
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 13
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 65
+                    HeMElfStat = HeMElfStat + 0
+                End If
+            Case 14
+                If Btn_Confirm_HeMElf.Created Then
+                    HeMElfSkill = HeMElfSkill + 80
+                    HeMElfStat = HeMElfStat + 0
+                End If
+        End Select
     End Sub
 End Class

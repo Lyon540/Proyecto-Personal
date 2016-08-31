@@ -38,8 +38,8 @@ Partial Class Elf_Close_Combat_Skills
         Me.Cbo_CharElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_AsaSElf = New System.Windows.Forms.Button()
         Me.Cbo_AsaSElf = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_HeMElf = New System.Windows.Forms.Button()
+        Me.Cbo_HeMElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_ShMElf = New System.Windows.Forms.Button()
         Me.Cbo_ShMElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_CrHElf = New System.Windows.Forms.Button()
@@ -233,24 +233,24 @@ Partial Class Elf_Close_Combat_Skills
         Me.Cbo_AsaSElf.Size = New System.Drawing.Size(66, 21)
         Me.Cbo_AsaSElf.TabIndex = 21
         '
-        'Button1
+        'Btn_Confirm_HeMElf
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(429, 396)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 43
-        Me.Button1.Text = "Confirm"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_HeMElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_HeMElf.Location = New System.Drawing.Point(429, 396)
+        Me.Btn_Confirm_HeMElf.Name = "Btn_Confirm_HeMElf"
+        Me.Btn_Confirm_HeMElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_HeMElf.TabIndex = 43
+        Me.Btn_Confirm_HeMElf.Text = "Confirm"
+        Me.Btn_Confirm_HeMElf.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'Cbo_HeMElf
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.ComboBox1.Location = New System.Drawing.Point(342, 398)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(66, 21)
-        Me.ComboBox1.TabIndex = 42
+        Me.Cbo_HeMElf.FormattingEnabled = True
+        Me.Cbo_HeMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_HeMElf.Location = New System.Drawing.Point(342, 398)
+        Me.Cbo_HeMElf.Name = "Cbo_HeMElf"
+        Me.Cbo_HeMElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_HeMElf.TabIndex = 42
         '
         'Btn_Confirm_ShMElf
         '
@@ -368,7 +368,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox8
         '
-        Me.PictureBox8.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Assault_Slash
+        Me.PictureBox8.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Heavy_Armor_Mastery
         Me.PictureBox8.Location = New System.Drawing.Point(292, 378)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(44, 41)
@@ -497,8 +497,8 @@ Partial Class Elf_Close_Combat_Skills
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(921, 469)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Btn_Confirm_HeMElf)
+        Me.Controls.Add(Me.Cbo_HeMElf)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.Btn_Confirm_ShMElf)
         Me.Controls.Add(Me.Cbo_ShMElf)
@@ -585,8 +585,8 @@ Partial Class Elf_Close_Combat_Skills
     Friend WithEvents Btn_Confirm_AsaSElf As Button
     Friend WithEvents Cbo_AsaSElf As ComboBox
     Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Btn_Confirm_HeMElf As Button
+    Friend WithEvents Cbo_HeMElf As ComboBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Btn_Confirm_ShMElf As Button
     Friend WithEvents Cbo_ShMElf As ComboBox
