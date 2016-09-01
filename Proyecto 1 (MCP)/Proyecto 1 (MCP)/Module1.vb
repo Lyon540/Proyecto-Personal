@@ -44,4 +44,16 @@
     'Heavy Armor Mastery'
     Public HeMElfSkill As Integer
     Public HeMElfStat As Double
+    'Light Armor Mastery'
+    Public LiMElfSkill As Integer
+    Public LiMElfStat As Double
+    'Hidden: Doppelganger'
+    Public DopElfSkill As Integer
+    Public DopElfStat As Double
+    'Bash'
+    Public BasElfSkill As Integer
+    Public BasElfStat As Double
+    'Rage Impact'
+    Public RaIElfSkill As Integer
+    Public RaIElfStat As Double
 End Module

@@ -133,6 +133,9 @@
   <data name="Gold_Archery_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Archery_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Bash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gold_Martial_Arts_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Martial_Arts_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="Gold_Transmutation_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Transmutation_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gold_Battle_Alchemy_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gold_Battle_Alchemy_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gold_Smithing_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Smithing_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,20 +163,26 @@
   <data name="Combat_Mastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Combat_Mastery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Smash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Smash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Charge" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Charge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sword_Mastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sword_Mastery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Light_Armor_Mastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Light_Armor_Mastery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doppelganger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doppelganger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gold_Ninja_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Ninja_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gold_Dual_Gun_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Dual_Gun_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Heavy_Armor_Mastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Heavy_Armor_Mastery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Counterattack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Counterattack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +193,14 @@
   <data name="Windmill" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Windmill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Critical_Hit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Critical_Hit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Gold_Close_Combat_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Close_Combat_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gold_Battle_Alchemy_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gold_Battle_Alchemy_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Critical_Hit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Critical_Hit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Defense" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Defense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,7 +223,7 @@
   <data name="Gold_Tailoring_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gold_Tailoring_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Heavy_Armor_Mastery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Heavy_Armor_Mastery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rage_Impact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rage_Impact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

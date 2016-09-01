@@ -22,6 +22,7 @@ Partial Class Elf_Close_Combat_Skills
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Elf_Close_Combat_Skills))
         Me.Cbo_CMElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_CMElf = New System.Windows.Forms.Button()
         Me.Btn_Confirm_DefElf = New System.Windows.Forms.Button()
@@ -52,6 +53,18 @@ Partial Class Elf_Close_Combat_Skills
         Me.Cbo_AxMElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_SwMElf = New System.Windows.Forms.Button()
         Me.Cbo_SwMElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_RaIElf = New System.Windows.Forms.Button()
+        Me.Cbo_RaIElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_BasElf = New System.Windows.Forms.Button()
+        Me.Cbo_BasElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_DopElf = New System.Windows.Forms.Button()
+        Me.Cbo_DopElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_LiMElf = New System.Windows.Forms.Button()
+        Me.Cbo_LiMElf = New System.Windows.Forms.ComboBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
@@ -66,6 +79,11 @@ Partial Class Elf_Close_Combat_Skills
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Btn_ReturnElfSkills = New System.Windows.Forms.Button()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,7 +103,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_CMElf
         '
         Me.Cbo_CMElf.FormattingEnabled = True
-        Me.Cbo_CMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_CMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CMElf.Location = New System.Drawing.Point(62, 32)
         Me.Cbo_CMElf.Name = "Cbo_CMElf"
         Me.Cbo_CMElf.Size = New System.Drawing.Size(66, 21)
@@ -114,7 +132,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_DefElf
         '
         Me.Cbo_DefElf.FormattingEnabled = True
-        Me.Cbo_DefElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_DefElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_DefElf.Location = New System.Drawing.Point(62, 91)
         Me.Cbo_DefElf.Name = "Cbo_DefElf"
         Me.Cbo_DefElf.Size = New System.Drawing.Size(66, 21)
@@ -133,7 +151,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_SMElf
         '
         Me.Cbo_SMElf.FormattingEnabled = True
-        Me.Cbo_SMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_SMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_SMElf.Location = New System.Drawing.Point(62, 150)
         Me.Cbo_SMElf.Name = "Cbo_SMElf"
         Me.Cbo_SMElf.Size = New System.Drawing.Size(66, 21)
@@ -152,7 +170,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_CoAElf
         '
         Me.Cbo_CoAElf.FormattingEnabled = True
-        Me.Cbo_CoAElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_CoAElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CoAElf.Location = New System.Drawing.Point(62, 210)
         Me.Cbo_CoAElf.Name = "Cbo_CoAElf"
         Me.Cbo_CoAElf.Size = New System.Drawing.Size(66, 21)
@@ -171,7 +189,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_WinMElf
         '
         Me.Cbo_WinMElf.FormattingEnabled = True
-        Me.Cbo_WinMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_WinMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_WinMElf.Location = New System.Drawing.Point(62, 271)
         Me.Cbo_WinMElf.Name = "Cbo_WinMElf"
         Me.Cbo_WinMElf.Size = New System.Drawing.Size(66, 21)
@@ -208,7 +226,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_CharElf
         '
         Me.Cbo_CharElf.FormattingEnabled = True
-        Me.Cbo_CharElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_CharElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CharElf.Location = New System.Drawing.Point(62, 335)
         Me.Cbo_CharElf.Name = "Cbo_CharElf"
         Me.Cbo_CharElf.Size = New System.Drawing.Size(66, 21)
@@ -227,7 +245,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_AsaSElf
         '
         Me.Cbo_AsaSElf.FormattingEnabled = True
-        Me.Cbo_AsaSElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_AsaSElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_AsaSElf.Location = New System.Drawing.Point(62, 398)
         Me.Cbo_AsaSElf.Name = "Cbo_AsaSElf"
         Me.Cbo_AsaSElf.Size = New System.Drawing.Size(66, 21)
@@ -246,7 +264,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_HeMElf
         '
         Me.Cbo_HeMElf.FormattingEnabled = True
-        Me.Cbo_HeMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_HeMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_HeMElf.Location = New System.Drawing.Point(342, 398)
         Me.Cbo_HeMElf.Name = "Cbo_HeMElf"
         Me.Cbo_HeMElf.Size = New System.Drawing.Size(66, 21)
@@ -265,7 +283,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_ShMElf
         '
         Me.Cbo_ShMElf.FormattingEnabled = True
-        Me.Cbo_ShMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_ShMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_ShMElf.Location = New System.Drawing.Point(342, 335)
         Me.Cbo_ShMElf.Name = "Cbo_ShMElf"
         Me.Cbo_ShMElf.Size = New System.Drawing.Size(66, 21)
@@ -284,7 +302,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_CrHElf
         '
         Me.Cbo_CrHElf.FormattingEnabled = True
-        Me.Cbo_CrHElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_CrHElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CrHElf.Location = New System.Drawing.Point(342, 271)
         Me.Cbo_CrHElf.Name = "Cbo_CrHElf"
         Me.Cbo_CrHElf.Size = New System.Drawing.Size(66, 21)
@@ -303,7 +321,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_EvaElf
         '
         Me.Cbo_EvaElf.FormattingEnabled = True
-        Me.Cbo_EvaElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_EvaElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_EvaElf.Location = New System.Drawing.Point(342, 210)
         Me.Cbo_EvaElf.Name = "Cbo_EvaElf"
         Me.Cbo_EvaElf.Size = New System.Drawing.Size(66, 21)
@@ -322,7 +340,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_BlMElf
         '
         Me.Cbo_BlMElf.FormattingEnabled = True
-        Me.Cbo_BlMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_BlMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_BlMElf.Location = New System.Drawing.Point(342, 150)
         Me.Cbo_BlMElf.Name = "Cbo_BlMElf"
         Me.Cbo_BlMElf.Size = New System.Drawing.Size(66, 21)
@@ -341,7 +359,7 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_AxMElf
         '
         Me.Cbo_AxMElf.FormattingEnabled = True
-        Me.Cbo_AxMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_AxMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_AxMElf.Location = New System.Drawing.Point(342, 91)
         Me.Cbo_AxMElf.Name = "Cbo_AxMElf"
         Me.Cbo_AxMElf.Size = New System.Drawing.Size(66, 21)
@@ -360,15 +378,127 @@ Partial Class Elf_Close_Combat_Skills
         'Cbo_SwMElf
         '
         Me.Cbo_SwMElf.FormattingEnabled = True
-        Me.Cbo_SwMElf.Items.AddRange(New Object() {"Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_SwMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_SwMElf.Location = New System.Drawing.Point(342, 32)
         Me.Cbo_SwMElf.Name = "Cbo_SwMElf"
         Me.Cbo_SwMElf.Size = New System.Drawing.Size(66, 21)
         Me.Cbo_SwMElf.TabIndex = 24
         '
+        'Btn_Confirm_RaIElf
+        '
+        Me.Btn_Confirm_RaIElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_RaIElf.Location = New System.Drawing.Point(693, 208)
+        Me.Btn_Confirm_RaIElf.Name = "Btn_Confirm_RaIElf"
+        Me.Btn_Confirm_RaIElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_RaIElf.TabIndex = 55
+        Me.Btn_Confirm_RaIElf.Text = "Confirm"
+        Me.Btn_Confirm_RaIElf.UseVisualStyleBackColor = True
+        '
+        'Cbo_RaIElf
+        '
+        Me.Cbo_RaIElf.FormattingEnabled = True
+        Me.Cbo_RaIElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_RaIElf.Location = New System.Drawing.Point(606, 210)
+        Me.Cbo_RaIElf.Name = "Cbo_RaIElf"
+        Me.Cbo_RaIElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_RaIElf.TabIndex = 54
+        '
+        'Btn_Confirm_BasElf
+        '
+        Me.Btn_Confirm_BasElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_BasElf.Location = New System.Drawing.Point(693, 148)
+        Me.Btn_Confirm_BasElf.Name = "Btn_Confirm_BasElf"
+        Me.Btn_Confirm_BasElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_BasElf.TabIndex = 52
+        Me.Btn_Confirm_BasElf.Text = "Confirm"
+        Me.Btn_Confirm_BasElf.UseVisualStyleBackColor = True
+        '
+        'Cbo_BasElf
+        '
+        Me.Cbo_BasElf.FormattingEnabled = True
+        Me.Cbo_BasElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_BasElf.Location = New System.Drawing.Point(606, 150)
+        Me.Cbo_BasElf.Name = "Cbo_BasElf"
+        Me.Cbo_BasElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_BasElf.TabIndex = 51
+        '
+        'Btn_Confirm_DopElf
+        '
+        Me.Btn_Confirm_DopElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_DopElf.Location = New System.Drawing.Point(693, 89)
+        Me.Btn_Confirm_DopElf.Name = "Btn_Confirm_DopElf"
+        Me.Btn_Confirm_DopElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_DopElf.TabIndex = 49
+        Me.Btn_Confirm_DopElf.Text = "Confirm"
+        Me.Btn_Confirm_DopElf.UseVisualStyleBackColor = True
+        '
+        'Cbo_DopElf
+        '
+        Me.Cbo_DopElf.FormattingEnabled = True
+        Me.Cbo_DopElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_DopElf.Location = New System.Drawing.Point(606, 91)
+        Me.Cbo_DopElf.Name = "Cbo_DopElf"
+        Me.Cbo_DopElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_DopElf.TabIndex = 48
+        '
+        'Btn_Confirm_LiMElf
+        '
+        Me.Btn_Confirm_LiMElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_LiMElf.Location = New System.Drawing.Point(693, 30)
+        Me.Btn_Confirm_LiMElf.Name = "Btn_Confirm_LiMElf"
+        Me.Btn_Confirm_LiMElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_LiMElf.TabIndex = 46
+        Me.Btn_Confirm_LiMElf.Text = "Confirm"
+        Me.Btn_Confirm_LiMElf.UseVisualStyleBackColor = True
+        '
+        'Cbo_LiMElf
+        '
+        Me.Cbo_LiMElf.FormattingEnabled = True
+        Me.Cbo_LiMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_LiMElf.Location = New System.Drawing.Point(606, 32)
+        Me.Cbo_LiMElf.Name = "Cbo_LiMElf"
+        Me.Cbo_LiMElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_LiMElf.TabIndex = 45
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Rage_Impact
+        Me.PictureBox18.Location = New System.Drawing.Point(556, 190)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(44, 41)
+        Me.PictureBox18.TabIndex = 53
+        Me.PictureBox18.TabStop = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Bash
+        Me.PictureBox19.Location = New System.Drawing.Point(556, 130)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(44, 41)
+        Me.PictureBox19.TabIndex = 50
+        Me.PictureBox19.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
+        Me.PictureBox20.Location = New System.Drawing.Point(556, 71)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(44, 41)
+        Me.PictureBox20.TabIndex = 47
+        Me.PictureBox20.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), System.Drawing.Image)
+        Me.PictureBox21.Location = New System.Drawing.Point(556, 12)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(44, 41)
+        Me.PictureBox21.TabIndex = 44
+        Me.PictureBox21.TabStop = False
+        '
         'PictureBox8
         '
-        Me.PictureBox8.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Heavy_Armor_Mastery
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
         Me.PictureBox8.Location = New System.Drawing.Point(292, 378)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(44, 41)
@@ -377,7 +507,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox9
         '
-        Me.PictureBox9.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Shield_Mastery
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
         Me.PictureBox9.Location = New System.Drawing.Point(292, 315)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(44, 41)
@@ -386,7 +516,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox10
         '
-        Me.PictureBox10.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Critical_Hit
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
         Me.PictureBox10.Location = New System.Drawing.Point(292, 251)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(44, 41)
@@ -395,7 +525,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox11
         '
-        Me.PictureBox11.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Evasion
+        Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
         Me.PictureBox11.Location = New System.Drawing.Point(292, 190)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(44, 41)
@@ -404,7 +534,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox12
         '
-        Me.PictureBox12.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Blunt_Mastery
+        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
         Me.PictureBox12.Location = New System.Drawing.Point(292, 130)
         Me.PictureBox12.Name = "PictureBox12"
         Me.PictureBox12.Size = New System.Drawing.Size(44, 41)
@@ -413,7 +543,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox13
         '
-        Me.PictureBox13.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Axe_Mastery
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
         Me.PictureBox13.Location = New System.Drawing.Point(292, 71)
         Me.PictureBox13.Name = "PictureBox13"
         Me.PictureBox13.Size = New System.Drawing.Size(44, 41)
@@ -422,7 +552,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox14
         '
-        Me.PictureBox14.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Sword_Mastery
+        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
         Me.PictureBox14.Location = New System.Drawing.Point(292, 12)
         Me.PictureBox14.Name = "PictureBox14"
         Me.PictureBox14.Size = New System.Drawing.Size(44, 41)
@@ -431,7 +561,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox7
         '
-        Me.PictureBox7.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Assault_Slash
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
         Me.PictureBox7.Location = New System.Drawing.Point(12, 378)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(44, 41)
@@ -440,7 +570,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Charge
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(12, 315)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(44, 41)
@@ -449,7 +579,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox5
         '
-        Me.PictureBox5.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Windmill
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.Location = New System.Drawing.Point(12, 251)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(44, 41)
@@ -458,7 +588,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox4
         '
-        Me.PictureBox4.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Counterattack
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(12, 190)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(44, 41)
@@ -467,7 +597,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox3
         '
-        Me.PictureBox3.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Smash
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(12, 130)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(44, 41)
@@ -476,7 +606,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Defense
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(12, 71)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(44, 41)
@@ -485,18 +615,40 @@ Partial Class Elf_Close_Combat_Skills
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Combat_Mastery
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(44, 41)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'Btn_ReturnElfSkills
+        '
+        Me.Btn_ReturnElfSkills.Location = New System.Drawing.Point(12, 442)
+        Me.Btn_ReturnElfSkills.Name = "Btn_ReturnElfSkills"
+        Me.Btn_ReturnElfSkills.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_ReturnElfSkills.TabIndex = 56
+        Me.Btn_ReturnElfSkills.Text = "Return"
+        Me.Btn_ReturnElfSkills.UseVisualStyleBackColor = True
+        '
         'Elf_Close_Combat_Skills
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(921, 469)
+        Me.Controls.Add(Me.Btn_ReturnElfSkills)
+        Me.Controls.Add(Me.Btn_Confirm_RaIElf)
+        Me.Controls.Add(Me.Cbo_RaIElf)
+        Me.Controls.Add(Me.PictureBox18)
+        Me.Controls.Add(Me.Btn_Confirm_BasElf)
+        Me.Controls.Add(Me.Cbo_BasElf)
+        Me.Controls.Add(Me.PictureBox19)
+        Me.Controls.Add(Me.Btn_Confirm_DopElf)
+        Me.Controls.Add(Me.Cbo_DopElf)
+        Me.Controls.Add(Me.PictureBox20)
+        Me.Controls.Add(Me.Btn_Confirm_LiMElf)
+        Me.Controls.Add(Me.Cbo_LiMElf)
+        Me.Controls.Add(Me.PictureBox21)
         Me.Controls.Add(Me.Btn_Confirm_HeMElf)
         Me.Controls.Add(Me.Cbo_HeMElf)
         Me.Controls.Add(Me.PictureBox8)
@@ -543,6 +695,10 @@ Partial Class Elf_Close_Combat_Skills
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Elf_Close_Combat_Skills"
         Me.Text = "Elf_Close_Combat_Skills"
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -606,4 +762,17 @@ Partial Class Elf_Close_Combat_Skills
     Friend WithEvents Btn_Confirm_SwMElf As Button
     Friend WithEvents Cbo_SwMElf As ComboBox
     Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Btn_Confirm_RaIElf As Button
+    Friend WithEvents Cbo_RaIElf As ComboBox
+    Friend WithEvents PictureBox18 As PictureBox
+    Friend WithEvents Btn_Confirm_BasElf As Button
+    Friend WithEvents Cbo_BasElf As ComboBox
+    Friend WithEvents PictureBox19 As PictureBox
+    Friend WithEvents Btn_Confirm_DopElf As Button
+    Friend WithEvents Cbo_DopElf As ComboBox
+    Friend WithEvents PictureBox20 As PictureBox
+    Friend WithEvents Btn_Confirm_LiMElf As Button
+    Friend WithEvents Cbo_LiMElf As ComboBox
+    Friend WithEvents PictureBox21 As PictureBox
+    Friend WithEvents Btn_ReturnElfSkills As Button
 End Class
