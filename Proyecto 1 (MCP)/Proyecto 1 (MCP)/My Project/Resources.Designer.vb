@@ -103,6 +103,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Bow_Mastery() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Bow_Mastery", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Charge() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Charge", resourceCulture)
@@ -133,9 +143,29 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Crash_Shot() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Crash_Shot", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Critical_Hit() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Critical_Hit", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Crossbow_Mastery() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Crossbow_Mastery", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -166,6 +196,16 @@ Namespace My.Resources
         Friend ReadOnly Property Evasion() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Evasion", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Final_Shot() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Final_Shot", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -373,9 +413,29 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Magnum_Shot() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Magnum_Shot", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Rage_Impact() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Rage_Impact", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Ranged_Attack() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ranged_Attack", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -396,6 +456,16 @@ Namespace My.Resources
         Friend ReadOnly Property Smash() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Smash", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Support_Shot() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Support_Shot", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

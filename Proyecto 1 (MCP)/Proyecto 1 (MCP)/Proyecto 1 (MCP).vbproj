@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Archery for Elf.Designer.vb">
+      <DependentUpon>Archery for Elf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Archery for Elf.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Elf Close Combat Skills.Designer.vb">
       <DependentUpon>Elf Close Combat Skills.vb</DependentUpon>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Archery for Elf.resx">
+      <DependentUpon>Archery for Elf.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Elf Close Combat Skills.resx">
       <DependentUpon>Elf Close Combat Skills.vb</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +253,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rage_Impact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ranged_Attack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magnum_Shot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Support_Shot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crash_Shot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bow_Mastery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crossbow_Mastery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final_Shot.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

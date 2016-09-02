@@ -1,5 +1,5 @@
 ﻿Module Module1
-    'Close combat category'
+    '------>>>>>>>Close combat category<<<<<<<------'
     Public CCElfSkill As Integer
     Public CCElfStat As Double
     'Combat Mastery <- Changes with Races'
@@ -56,4 +56,32 @@
     'Rage Impact'
     Public RaIElfSkill As Integer
     Public RaIElfStat As Double
+
+    'ArchElfSkill=RanElfSkill+MaSElfSkill+SupSElfSkill+CraSElfSkill+BowMElfSkill+CroMElfSkill'
+    'ArchElfStat=RanElfSkill+MaSElfStat+SupSElfStat+CraSElfStat+BowMElfStat+CroMElfStat'
+
+    '------>>>>>>>Archery category<<<<<<<------'
+    Public ArchElfSkill As Integer
+    Public ArchElfStat As Double
+    'Range Attack'
+    Public RanElfSkill As Integer
+    Public RanElfStat As Double
+    'Magnum Shot'
+    Public MaSElfSkill As Integer
+    Public MaSElfStat As Double
+    'Support Shot'
+    Public SupSElfSkill As Integer
+    Public SupSElfStat As Double
+    'Crash Shot'
+    Public CraSElfSkill As Integer
+    Public CraSElfStat As Double
+    'Bow Mastery'
+    Public BowMElfSkill As Integer
+    Public BowMElfStat As Double
+    'Crossbow Mastery'
+    Public CroMElfSkill As Integer
+    Public CroMElfStat As Double
+    'Final Shot'
+    Public FinSElfSkill As Integer
+    Public FinSElfStat As Double
 End Module

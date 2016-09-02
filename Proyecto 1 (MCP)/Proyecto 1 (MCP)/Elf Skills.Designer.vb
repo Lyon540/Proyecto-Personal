@@ -23,7 +23,7 @@ Partial Class Elf_Skills
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Btn_CCElf = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Btn_ArchElf = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -88,15 +88,15 @@ Partial Class Elf_Skills
         Me.Btn_CCElf.Text = "Close Combat"
         Me.Btn_CCElf.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Btn_ArchElf
         '
-        Me.Button2.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(52, 73)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 23)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Archery"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Btn_ArchElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_ArchElf.Location = New System.Drawing.Point(52, 73)
+        Me.Btn_ArchElf.Name = "Btn_ArchElf"
+        Me.Btn_ArchElf.Size = New System.Drawing.Size(106, 23)
+        Me.Btn_ArchElf.TabIndex = 3
+        Me.Btn_ArchElf.Text = "Archery"
+        Me.Btn_ArchElf.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -461,7 +461,7 @@ Partial Class Elf_Skills
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Btn_ArchElf)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Btn_CCElf)
         Me.Controls.Add(Me.PictureBox1)
@@ -491,7 +491,7 @@ Partial Class Elf_Skills
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Btn_CCElf As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Btn_ArchElf As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox3 As PictureBox
