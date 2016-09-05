@@ -57,8 +57,8 @@
     Public RaIElfSkill As Integer
     Public RaIElfStat As Double
 
-    'ArchElfSkill=RanElfSkill+MaSElfSkill+SupSElfSkill+CraSElfSkill+BowMElfSkill+CroMElfSkill'
-    'ArchElfStat=RanElfSkill+MaSElfStat+SupSElfStat+CraSElfStat+BowMElfStat+CroMElfStat'
+    'ArchElfSkill=RanElfSkill+MaSElfSkill+SupSElfSkill+CraSElfSkill+BowMElfSkill+CroMElfSkill+FinSElfSkill+MirMElfSkill+SpiSElfSkill+UrgSElfSkill'
+    'ArchElfStat=RanElfSkill+MaSElfStat+SupSElfStat+CraSElfStat+BowMElfStat+CroMElfStat+FinSElfStat+MirMElfStat+SpiSElfStat+UrgSElfStat'
 
     '------>>>>>>>Archery category<<<<<<<------'
     Public ArchElfSkill As Integer
@@ -84,4 +84,13 @@
     'Final Shot'
     Public FinSElfSkill As Integer
     Public FinSElfStat As Double
+    'Mirage Missile'
+    Public MirMElfSkill As Integer
+    Public MirMElfStat As Double
+    'Spider Shot'
+    Public SpiSElfSkill As Integer
+    Public SpiSElfStat As Double
+    'Urgent Shot'
+    Public UrgSElfSkill As Integer
+    Public UrgSElfStat As Double
 End Module

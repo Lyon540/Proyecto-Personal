@@ -40,6 +40,7 @@ Partial Class Form1
         '
         'Cbo_PMenu
         '
+        Me.Cbo_PMenu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_PMenu.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cbo_PMenu.FormattingEnabled = True
         Me.Cbo_PMenu.Items.AddRange(New Object() {"Elf", "Giant", "Human"})

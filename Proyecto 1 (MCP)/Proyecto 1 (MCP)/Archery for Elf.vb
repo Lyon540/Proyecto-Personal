@@ -86,6 +86,10 @@
                     RanElfStat = RanElfStat + 12.2
                 End If
         End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
     End Sub
     Private Sub Btn_Confirm_MaSElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_MaSElf.Click
         MaSElfSkill = 0
@@ -174,6 +178,10 @@
                     MaSElfStat = MaSElfStat + 1.9
                 End If
         End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
     End Sub
     Private Sub Btn_Confirm_SupSElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_SupSElf.Click
         SupSElfSkill = 0
@@ -262,6 +270,10 @@
                     SupSElfStat = SupSElfStat + 3.2
                 End If
         End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
     End Sub
     Private Sub Btn_Confirm_CraSElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_CraSElf.Click
         CraSElfSkill = 0
@@ -350,6 +362,10 @@
                     CraSElfStat = CraSElfStat + 11.1
                 End If
         End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
     End Sub
     Private Sub Btn_Confirm_BowMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_BowMElf.Click
         BowMElfSkill = 0
@@ -438,6 +454,10 @@
                     BowMElfStat = BowMElfStat + 1.9
                 End If
         End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
     End Sub
     Private Sub Btn_Confirm_CroMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_CroMElf.Click
         CroMElfSkill = 0
@@ -526,5 +546,379 @@
                     CroMElfStat = CroMElfStat + 9.5
                 End If
         End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
+    End Sub
+    Private Sub Btn_Confirm_FinSElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_FinSElf.Click
+        FinSElfSkill = 0
+        FinSElfStat = 0
+        Select Case Cbo_FinSElf.SelectedIndex
+            'Beggin with the Final Shot Skill (Elf Only Skill)'
+            Case 0
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 0
+                    FinSElfStat = FinSElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 20
+                    FinSElfStat = FinSElfStat + 0.2
+                End If
+            Case 2
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 50
+                    FinSElfStat = FinSElfStat + 0.4
+                End If
+            Case 3
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 80
+                    FinSElfStat = FinSElfStat + 0.6
+                End If
+            Case 4
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 100
+                    FinSElfStat = FinSElfStat + 0.8
+                End If
+            Case 5
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 120
+                    FinSElfStat = FinSElfStat + 1
+                End If
+            Case 6
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 150
+                    FinSElfStat = FinSElfStat + 1.2
+                End If
+            Case 7
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 180
+                    FinSElfStat = FinSElfStat + 2
+                End If
+            Case 8
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 200
+                    FinSElfStat = FinSElfStat + 2.8
+                End If
+            Case 9
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 230
+                    FinSElfStat = FinSElfStat + 3.6
+                End If
+            Case 10
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 260
+                    FinSElfStat = FinSElfStat + 4.4
+                End If
+            Case 11
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 290
+                    FinSElfStat = FinSElfStat + 6.2
+                End If
+            Case 12
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 320
+                    FinSElfStat = FinSElfStat + 7.5
+                End If
+            Case 13
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 350
+                    FinSElfStat = FinSElfStat + 8.8
+                End If
+            Case 14
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 380
+                    FinSElfStat = FinSElfStat + 10.1
+                End If
+            Case 15
+                If Btn_Confirm_FinSElf.Created Then
+                    FinSElfSkill = FinSElfSkill + 430
+                    FinSElfStat = FinSElfStat + 13.1
+                End If
+        End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
+    End Sub
+    Private Sub Btn_Confirm_MirMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_MirMElf.Click
+        MirMElfSkill = 0
+        MirMElfStat = 0
+        Select Case Cbo_MirMElf.SelectedIndex
+            'Beggin with the Mirage Missile Skill (Elf Only Skill)'
+            Case 0
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 0
+                    MirMElfStat = MirMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 5
+                    MirMElfStat = MirMElfStat + 0.1
+                End If
+            Case 2
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 10
+                    MirMElfStat = MirMElfStat + 0.2
+                End If
+            Case 3
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 30
+                    MirMElfStat = MirMElfStat + 0.3
+                End If
+            Case 4
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 50
+                    MirMElfStat = MirMElfStat + 0.4
+                End If
+            Case 5
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 70
+                    MirMElfStat = MirMElfStat + 0.5
+                End If
+            Case 6
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 90
+                    MirMElfStat = MirMElfStat + 0.8
+                End If
+            Case 7
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 110
+                    MirMElfStat = MirMElfStat + 1.1
+                End If
+            Case 8
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 130
+                    MirMElfStat = MirMElfStat + 1.4
+                End If
+            Case 9
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 150
+                    MirMElfStat = MirMElfStat + 1.7
+                End If
+            Case 10
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 170
+                    MirMElfStat = MirMElfStat + 2
+                End If
+            Case 11
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 200
+                    MirMElfStat = MirMElfStat + 2.4
+                End If
+            Case 12
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 230
+                    MirMElfStat = MirMElfStat + 2.8
+                End If
+            Case 13
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 260
+                    MirMElfStat = MirMElfStat + 3.2
+                End If
+            Case 14
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 290
+                    MirMElfStat = MirMElfStat + 3.6
+                End If
+            Case 15
+                If Btn_Confirm_MirMElf.Created Then
+                    MirMElfSkill = MirMElfSkill + 320
+                    MirMElfStat = MirMElfStat + 5.1
+                End If
+        End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
+    End Sub
+    Private Sub Btn_Confirm_SpiSElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_SpiSElf.Click
+        SpiSElfSkill = 0
+        SpiSElfStat = 0
+        Select Case Cbo_SpiSElf.SelectedIndex
+            'Skill & Stat no Changes with races'
+            'Beggin with the Spider Shot Skill'
+            Case 0
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 0.1
+                End If
+            Case 2
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 0.6
+                End If
+            Case 3
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 0.7
+                End If
+            Case 4
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 1.2
+                End If
+            Case 5
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 1.3
+                End If
+            Case 6
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 1.8
+                End If
+            Case 7
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 2.4
+                End If
+            Case 8
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 3
+                End If
+            Case 9
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 4.2
+                End If
+            Case 10
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 5.4
+                End If
+            Case 11
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 6.6
+                End If
+            Case 12
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 7.8
+                End If
+            Case 13
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 9
+                End If
+            Case 14
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 10.3
+                End If
+            Case 15
+                If Btn_Confirm_SpiSElf.Created Then
+                    SpiSElfSkill = SpiSElfSkill + 0
+                    SpiSElfStat = SpiSElfStat + 12.3
+                End If
+        End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
+    End Sub
+    Private Sub Btn_Confirm_UrgSElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_UrgSElf.Click
+        UrgSElfSkill = 0
+        UrgSElfStat = 0
+        Select Case Cbo_UrgSElf.SelectedIndex
+            'Skill & Stat no Changes with races'
+            'Beggin with the Spider Shot Skill'
+            Case 0
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 0
+                    UrgSElfStat = UrgSElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 0
+                    UrgSElfStat = UrgSElfStat + 0.1
+                End If
+            Case 2
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 10
+                    UrgSElfStat = UrgSElfStat + 0.2
+                End If
+            Case 3
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 20
+                    UrgSElfStat = UrgSElfStat + 0.3
+                End If
+            Case 4
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 30
+                    UrgSElfStat = UrgSElfStat + 0.4
+                End If
+            Case 5
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 40
+                    UrgSElfStat = UrgSElfStat + 0.5
+                End If
+            Case 6
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 50
+                    UrgSElfStat = UrgSElfStat + 0.6
+                End If
+            Case 7
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 70
+                    UrgSElfStat = UrgSElfStat + 1.2
+                End If
+            Case 8
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 85
+                    UrgSElfStat = UrgSElfStat + 1.8
+                End If
+            Case 9
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 100
+                    UrgSElfStat = UrgSElfStat + 2.4
+                End If
+            Case 10
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 115
+                    UrgSElfStat = UrgSElfStat + 3
+                End If
+            Case 11
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 145
+                    UrgSElfStat = UrgSElfStat + 3.6
+                End If
+            Case 12
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 175
+                    UrgSElfStat = UrgSElfStat + 4.3
+                End If
+            Case 13
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 205
+                    UrgSElfStat = UrgSElfStat + 5
+                End If
+            Case 14
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 235
+                    UrgSElfStat = UrgSElfStat + 5.7
+                End If
+            Case 15
+                If Btn_Confirm_UrgSElf.Created Then
+                    UrgSElfSkill = UrgSElfSkill + 265
+                    UrgSElfStat = UrgSElfStat + 7
+                End If
+        End Select
+        ArchElfSkill = RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill
+        Label1.Text = ArchElfSkill
+        ArchElfStat = RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat
+        Label2.Text = ArchElfStat
+    End Sub
+    Private Sub Btn_ReturnElfSkills_Click(sender As Object, e As EventArgs) Handles Btn_ReturnElfSkills.Click
+        Me.Hide()
+        Elf_Skills.Show()
     End Sub
 End Class

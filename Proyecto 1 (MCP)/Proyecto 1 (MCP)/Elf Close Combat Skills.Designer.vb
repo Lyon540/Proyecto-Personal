@@ -61,6 +61,8 @@ Partial Class Elf_Close_Combat_Skills
         Me.Cbo_DopElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_LiMElf = New System.Windows.Forms.Button()
         Me.Cbo_LiMElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_ReturnElfSkills = New System.Windows.Forms.Button()
+        Me.Btn_AllConfirm = New System.Windows.Forms.Button()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox20 = New System.Windows.Forms.PictureBox()
@@ -79,7 +81,6 @@ Partial Class Elf_Close_Combat_Skills
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Btn_ReturnElfSkills = New System.Windows.Forms.Button()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -102,6 +103,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_CMElf
         '
+        Me.Cbo_CMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_CMElf.FormattingEnabled = True
         Me.Cbo_CMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CMElf.Location = New System.Drawing.Point(62, 32)
@@ -131,6 +133,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_DefElf
         '
+        Me.Cbo_DefElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_DefElf.FormattingEnabled = True
         Me.Cbo_DefElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_DefElf.Location = New System.Drawing.Point(62, 91)
@@ -150,6 +153,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_SMElf
         '
+        Me.Cbo_SMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_SMElf.FormattingEnabled = True
         Me.Cbo_SMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_SMElf.Location = New System.Drawing.Point(62, 150)
@@ -169,6 +173,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_CoAElf
         '
+        Me.Cbo_CoAElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_CoAElf.FormattingEnabled = True
         Me.Cbo_CoAElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CoAElf.Location = New System.Drawing.Point(62, 210)
@@ -188,6 +193,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_WinMElf
         '
+        Me.Cbo_WinMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_WinMElf.FormattingEnabled = True
         Me.Cbo_WinMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_WinMElf.Location = New System.Drawing.Point(62, 271)
@@ -225,6 +231,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_CharElf
         '
+        Me.Cbo_CharElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_CharElf.FormattingEnabled = True
         Me.Cbo_CharElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CharElf.Location = New System.Drawing.Point(62, 335)
@@ -244,6 +251,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_AsaSElf
         '
+        Me.Cbo_AsaSElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_AsaSElf.FormattingEnabled = True
         Me.Cbo_AsaSElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_AsaSElf.Location = New System.Drawing.Point(62, 398)
@@ -263,6 +271,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_HeMElf
         '
+        Me.Cbo_HeMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_HeMElf.FormattingEnabled = True
         Me.Cbo_HeMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_HeMElf.Location = New System.Drawing.Point(342, 398)
@@ -282,6 +291,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_ShMElf
         '
+        Me.Cbo_ShMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_ShMElf.FormattingEnabled = True
         Me.Cbo_ShMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_ShMElf.Location = New System.Drawing.Point(342, 335)
@@ -301,6 +311,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_CrHElf
         '
+        Me.Cbo_CrHElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_CrHElf.FormattingEnabled = True
         Me.Cbo_CrHElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_CrHElf.Location = New System.Drawing.Point(342, 271)
@@ -320,6 +331,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_EvaElf
         '
+        Me.Cbo_EvaElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_EvaElf.FormattingEnabled = True
         Me.Cbo_EvaElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_EvaElf.Location = New System.Drawing.Point(342, 210)
@@ -339,6 +351,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_BlMElf
         '
+        Me.Cbo_BlMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_BlMElf.FormattingEnabled = True
         Me.Cbo_BlMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_BlMElf.Location = New System.Drawing.Point(342, 150)
@@ -358,6 +371,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_AxMElf
         '
+        Me.Cbo_AxMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_AxMElf.FormattingEnabled = True
         Me.Cbo_AxMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_AxMElf.Location = New System.Drawing.Point(342, 91)
@@ -377,6 +391,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_SwMElf
         '
+        Me.Cbo_SwMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_SwMElf.FormattingEnabled = True
         Me.Cbo_SwMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_SwMElf.Location = New System.Drawing.Point(342, 32)
@@ -396,6 +411,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_RaIElf
         '
+        Me.Cbo_RaIElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_RaIElf.FormattingEnabled = True
         Me.Cbo_RaIElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_RaIElf.Location = New System.Drawing.Point(606, 210)
@@ -415,6 +431,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_BasElf
         '
+        Me.Cbo_BasElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_BasElf.FormattingEnabled = True
         Me.Cbo_BasElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_BasElf.Location = New System.Drawing.Point(606, 150)
@@ -434,6 +451,7 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_DopElf
         '
+        Me.Cbo_DopElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_DopElf.FormattingEnabled = True
         Me.Cbo_DopElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_DopElf.Location = New System.Drawing.Point(606, 91)
@@ -453,12 +471,31 @@ Partial Class Elf_Close_Combat_Skills
         '
         'Cbo_LiMElf
         '
+        Me.Cbo_LiMElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_LiMElf.FormattingEnabled = True
         Me.Cbo_LiMElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
         Me.Cbo_LiMElf.Location = New System.Drawing.Point(606, 32)
         Me.Cbo_LiMElf.Name = "Cbo_LiMElf"
         Me.Cbo_LiMElf.Size = New System.Drawing.Size(66, 21)
         Me.Cbo_LiMElf.TabIndex = 45
+        '
+        'Btn_ReturnElfSkills
+        '
+        Me.Btn_ReturnElfSkills.Location = New System.Drawing.Point(12, 442)
+        Me.Btn_ReturnElfSkills.Name = "Btn_ReturnElfSkills"
+        Me.Btn_ReturnElfSkills.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_ReturnElfSkills.TabIndex = 56
+        Me.Btn_ReturnElfSkills.Text = "Return"
+        Me.Btn_ReturnElfSkills.UseVisualStyleBackColor = True
+        '
+        'Btn_AllConfirm
+        '
+        Me.Btn_AllConfirm.Location = New System.Drawing.Point(401, 442)
+        Me.Btn_AllConfirm.Name = "Btn_AllConfirm"
+        Me.Btn_AllConfirm.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_AllConfirm.TabIndex = 57
+        Me.Btn_AllConfirm.Text = "All Confirm"
+        Me.Btn_AllConfirm.UseVisualStyleBackColor = True
         '
         'PictureBox18
         '
@@ -622,20 +659,12 @@ Partial Class Elf_Close_Combat_Skills
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Btn_ReturnElfSkills
-        '
-        Me.Btn_ReturnElfSkills.Location = New System.Drawing.Point(12, 442)
-        Me.Btn_ReturnElfSkills.Name = "Btn_ReturnElfSkills"
-        Me.Btn_ReturnElfSkills.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_ReturnElfSkills.TabIndex = 56
-        Me.Btn_ReturnElfSkills.Text = "Return"
-        Me.Btn_ReturnElfSkills.UseVisualStyleBackColor = True
-        '
         'Elf_Close_Combat_Skills
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(921, 469)
+        Me.Controls.Add(Me.Btn_AllConfirm)
         Me.Controls.Add(Me.Btn_ReturnElfSkills)
         Me.Controls.Add(Me.Btn_Confirm_RaIElf)
         Me.Controls.Add(Me.Cbo_RaIElf)
@@ -775,4 +804,5 @@ Partial Class Elf_Close_Combat_Skills
     Friend WithEvents Cbo_LiMElf As ComboBox
     Friend WithEvents PictureBox21 As PictureBox
     Friend WithEvents Btn_ReturnElfSkills As Button
+    Friend WithEvents Btn_AllConfirm As Button
 End Class
