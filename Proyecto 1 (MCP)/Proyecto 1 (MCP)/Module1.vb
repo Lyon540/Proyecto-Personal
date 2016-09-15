@@ -57,8 +57,8 @@
     Public RaIElfSkill As Integer
     Public RaIElfStat As Double
 
-    'ArchElfSkill=RanElfSkill+MaSElfSkill+SupSElfSkill+CraSElfSkill+BowMElfSkill+CroMElfSkill+FinSElfSkill+MirMElfSkill+SpiSElfSkill+UrgSElfSkill'
-    'ArchElfStat=RanElfSkill+MaSElfStat+SupSElfStat+CraSElfStat+BowMElfStat+CroMElfStat+FinSElfStat+MirMElfStat+SpiSElfStat+UrgSElfStat'
+    'ArchElfSkill=RanElfSkill + MaSElfSkill + SupSElfSkill + CraSElfSkill + BowMElfSkill + CroMElfSkill + FinSElfSkill + MirMElfSkill + SpiSElfSkill + UrgSElfSkill'
+    'ArchElfStat=RanElfStat + MaSElfStat + SupSElfStat + CraSElfStat + BowMElfStat + CroMElfStat + FinSElfStat + MirMElfStat + SpiSElfStat + UrgSElfStat'
 
     '------>>>>>>>Archery category<<<<<<<------'
     Public ArchElfSkill As Integer
@@ -93,4 +93,13 @@
     'Urgent Shot'
     Public UrgSElfSkill As Integer
     Public UrgSElfStat As Double
+
+    'MagElfSkill =
+    'MagElfStat  =
+    '------>>>>>>>Magic category<<<<<<<------'
+    Public MagElfSkill As Integer
+    Public MagElfStat As Double
+    'Range Attack'
+    Public MagMElfSkill As Integer
+    Public MagMElfStat As Double
 End Module

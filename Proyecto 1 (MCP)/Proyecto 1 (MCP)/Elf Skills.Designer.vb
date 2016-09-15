@@ -24,7 +24,7 @@ Partial Class Elf_Skills
     Private Sub InitializeComponent()
         Me.Btn_CCElf = New System.Windows.Forms.Button()
         Me.Btn_ArchElf = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Btn_MagElf = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -98,15 +98,15 @@ Partial Class Elf_Skills
         Me.Btn_ArchElf.Text = "Archery"
         Me.Btn_ArchElf.UseVisualStyleBackColor = True
         '
-        'Button3
+        'Btn_MagElf
         '
-        Me.Button3.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(52, 126)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(106, 23)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Magic"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Btn_MagElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_MagElf.Location = New System.Drawing.Point(52, 126)
+        Me.Btn_MagElf.Name = "Btn_MagElf"
+        Me.Btn_MagElf.Size = New System.Drawing.Size(106, 23)
+        Me.Btn_MagElf.TabIndex = 5
+        Me.Btn_MagElf.Text = "Magic"
+        Me.Btn_MagElf.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -459,7 +459,7 @@ Partial Class Elf_Skills
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Btn_MagElf)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Btn_ArchElf)
         Me.Controls.Add(Me.PictureBox2)
@@ -493,7 +493,7 @@ Partial Class Elf_Skills
     Friend WithEvents Btn_CCElf As Button
     Friend WithEvents Btn_ArchElf As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Btn_MagElf As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox4 As PictureBox

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2f064070-59c0-4e34-8a0e-b3fb9a4c01dd}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\obj\Debug\Proyecto 1 %28MCP%29.vbproj.FileListAbsolute.txt" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Assault_Slash.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Axe_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Bash.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Blunt_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Bow_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Charge.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Combat_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Counterattack.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Crash_Shot.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Critical_Hit.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Crossbow_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Defense.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Doppelganger.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Evasion.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Final_Shot.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Adventure_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Archery_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Battle_Alchemy_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Carpentry_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Close_Combat_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Cooking_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Dual_Gun_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Holy_Arts_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Magic_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Martial_Arts_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Medicine_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Mercantile_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Music_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Ninja_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Puppetry_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Smithing_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Tailoring_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Gold_Transmutation_Icon.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Heavy_Armor_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Light_Armor_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Magnum_Shot.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Mirage_Missile.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Rage_Impact.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Ranged_Attack.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Shield_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Smash.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Spider_Shot.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Support_Shot.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Sword_Mastery.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Urgent_Shot.png" />
+    <Content Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources\Windmill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\obj\Debug" />
+    <Folder Include="Proyecto 1 %28MCP%29\Proyecto 1 %28MCP%29\Resources" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

@@ -7,4 +7,8 @@
         Me.Hide()
         Archery_for_Elf.Show()
     End Sub
+    Private Sub Btn_MagElf_Click(sender As Object, e As EventArgs) Handles Btn_MagElf.Click
+        Me.Hide()
+        Magic_for_Elf.Show()
+    End Sub
 End Class
