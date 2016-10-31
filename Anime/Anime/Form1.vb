@@ -23,5 +23,6 @@ Public Class Form1
         TextBox1.Text = ""
         TextBox2.Text = ""
         conexion.Close()
+        'http://www.tutorialesprogramacionya.com/'
     End Sub
 End Class
