@@ -1,6 +1,19 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Form1
+    Sub Limpiar()
+        Txt_Nombre.Text = ""
+        Cbo_Gen1.SelectedItem = ""
+        Cbo_Gen2.SelectedItem = ""
+        Cbo_Gen3.SelectedItem = ""
+        Txt_Capitulos.Text = ""
+        Txt_Descripcion.Text = ""
+        Txt_Lanzamiento.Text = ""
+        Cbo_Subtitulada.SelectedItem = ""
+        Cbo_Doblada.SelectedItem = ""
+        Cbo_Recom.SelectedItem = ""
+        Cbo_Edo.SelectedItem = ""
+    End Sub
     Private Sub Btn_Cerrar_Click(sender As Object, e As EventArgs) Handles Btn_Cerrar.Click
         Me.Close()
     End Sub
@@ -28,10 +41,11 @@ Public Class Form1
             End With
             MsgBox("El registro fue agregado", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Guardar")
             conec.Close()
+            Call Limpiar()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        'http://www.tutorialesprogramacionya.com/'
 
+        'http://www.tutorialesprogramacionya.com/'
     End Sub
 End Class
