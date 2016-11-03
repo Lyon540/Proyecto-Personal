@@ -19,7 +19,7 @@ Public Class Form1
     End Sub
 
     Private Sub Btn_Añadir_Click(sender As Object, e As EventArgs) Handles Btn_Añadir.Click
-        Dim conec As New SqlConnection("Data Source=DEVBECARIOS1-PC\DBECARIOS ;Initial Catalog=Anime ;Integrated Security=True")
+        Dim conec As New SqlConnection("Data Source=DESKTOP-MF3O32O\LYON ;Initial Catalog=Anime ;Integrated Security=True")
         Try
             conec.Open()
             Dim cmd As New SqlCommand("SP_Ingresar", conec)
@@ -46,6 +46,17 @@ Public Class Form1
             MsgBox(ex.Message)
         End Try
 
+        Dim DA As New SqlDataAdapter("SP_Actualizar", conec)
+        Dim DS As New DataSet
+        DA.Fill(DS, "Anime_Visto")
+        DataGridView1.DataSource = DS.Tables("Anime_Visto")
+
         'http://www.tutorialesprogramacionya.com/'
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'AnimeDataSet.Anime_Visto' Puede moverla o quitarla según sea necesario.
+        Me.Anime_VistoTableAdapter.Fill(Me.AnimeDataSet.Anime_Visto)
     End Sub
 End Class
