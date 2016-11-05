@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBA90542-CE7B-464E-955B-C0F8B3D393E6}</ProjectGuid>
+    <ProjectGuid>{CB7388EE-3609-44A5-AE1E-45ECDB2AF12A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Anime.My.MyApplication</StartupObject>
     <RootNamespace>Anime</RootNamespace>
     <AssemblyName>Anime</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">

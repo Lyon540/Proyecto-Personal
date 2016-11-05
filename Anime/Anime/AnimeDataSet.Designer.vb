@@ -283,6 +283,8 @@ Partial Public Class AnimeDataSet
     Partial Public Class Anime_VistoDataTable
         Inherits Global.System.Data.TypedTableBase(Of Anime_VistoRow)
         
+        Private columnCodigo As Global.System.Data.DataColumn
+        
         Private columnNombre As Global.System.Data.DataColumn
         
         Private columnGenero_1 As Global.System.Data.DataColumn
@@ -292,6 +294,8 @@ Partial Public Class AnimeDataSet
         Private columnGenero_3 As Global.System.Data.DataColumn
         
         Private columnCapitulos As Global.System.Data.DataColumn
+        
+        Private columnTemporada As Global.System.Data.DataColumn
         
         Private columnDescripcion As Global.System.Data.DataColumn
         
@@ -304,6 +308,10 @@ Partial Public Class AnimeDataSet
         Private columnRecomendado As Global.System.Data.DataColumn
         
         Private columnEstado As Global.System.Data.DataColumn
+        
+        Private columnStat_Serie As Global.System.Data.DataColumn
+        
+        Private columnURL As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -342,6 +350,14 @@ Partial Public Class AnimeDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CodigoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCodigo
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property NombreColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnNombre
@@ -377,6 +393,14 @@ Partial Public Class AnimeDataSet
         Public ReadOnly Property CapitulosColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnCapitulos
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property TemporadaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTemporada
             End Get
         End Property
         
@@ -429,6 +453,22 @@ Partial Public Class AnimeDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Stat_SerieColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnStat_Serie
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property URLColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnURL
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -465,9 +505,9 @@ Partial Public Class AnimeDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddAnime_VistoRow(ByVal Nombre As String, ByVal Genero_1 As String, ByVal Genero_2 As String, ByVal Genero_3 As String, ByVal Capitulos As Integer, ByVal Descripcion As String, ByVal Fecha_Lanzamiento As String, ByVal Subtitulada As String, ByVal Doblada As String, ByVal Recomendado As String, ByVal Estado As String) As Anime_VistoRow
+        Public Overloads Function AddAnime_VistoRow(ByVal Nombre As String, ByVal Genero_1 As String, ByVal Genero_2 As String, ByVal Genero_3 As String, ByVal Capitulos As Integer, ByVal Temporada As Integer, ByVal Descripcion As String, ByVal Fecha_Lanzamiento As String, ByVal Subtitulada As String, ByVal Doblada As String, ByVal Recomendado As String, ByVal Estado As String, ByVal Stat_Serie As String, ByVal URL As String) As Anime_VistoRow
             Dim rowAnime_VistoRow As Anime_VistoRow = CType(Me.NewRow,Anime_VistoRow)
-            Dim columnValuesArray() As Object = New Object() {Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Descripcion, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Temporada, Descripcion, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado, Stat_Serie, URL}
             rowAnime_VistoRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowAnime_VistoRow)
             Return rowAnime_VistoRow
@@ -496,22 +536,28 @@ Partial Public Class AnimeDataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
+            Me.columnCodigo = MyBase.Columns("Codigo")
             Me.columnNombre = MyBase.Columns("Nombre")
             Me.columnGenero_1 = MyBase.Columns("Genero_1")
             Me.columnGenero_2 = MyBase.Columns("Genero_2")
             Me.columnGenero_3 = MyBase.Columns("Genero_3")
             Me.columnCapitulos = MyBase.Columns("Capitulos")
+            Me.columnTemporada = MyBase.Columns("Temporada")
             Me.columnDescripcion = MyBase.Columns("Descripcion")
             Me.columnFecha_Lanzamiento = MyBase.Columns("Fecha_Lanzamiento")
             Me.columnSubtitulada = MyBase.Columns("Subtitulada")
             Me.columnDoblada = MyBase.Columns("Doblada")
             Me.columnRecomendado = MyBase.Columns("Recomendado")
             Me.columnEstado = MyBase.Columns("Estado")
+            Me.columnStat_Serie = MyBase.Columns("Stat_Serie")
+            Me.columnURL = MyBase.Columns("URL")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
+            Me.columnCodigo = New Global.System.Data.DataColumn("Codigo", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCodigo)
             Me.columnNombre = New Global.System.Data.DataColumn("Nombre", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnNombre)
             Me.columnGenero_1 = New Global.System.Data.DataColumn("Genero_1", GetType(String), Nothing, Global.System.Data.MappingType.Element)
@@ -522,6 +568,8 @@ Partial Public Class AnimeDataSet
             MyBase.Columns.Add(Me.columnGenero_3)
             Me.columnCapitulos = New Global.System.Data.DataColumn("Capitulos", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCapitulos)
+            Me.columnTemporada = New Global.System.Data.DataColumn("Temporada", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTemporada)
             Me.columnDescripcion = New Global.System.Data.DataColumn("Descripcion", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnDescripcion)
             Me.columnFecha_Lanzamiento = New Global.System.Data.DataColumn("Fecha_Lanzamiento", GetType(String), Nothing, Global.System.Data.MappingType.Element)
@@ -534,19 +582,30 @@ Partial Public Class AnimeDataSet
             MyBase.Columns.Add(Me.columnRecomendado)
             Me.columnEstado = New Global.System.Data.DataColumn("Estado", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnEstado)
+            Me.columnStat_Serie = New Global.System.Data.DataColumn("Stat_Serie", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnStat_Serie)
+            Me.columnURL = New Global.System.Data.DataColumn("URL", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnURL)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnNombre}, true))
+            Me.columnCodigo.AutoIncrement = true
+            Me.columnCodigo.AutoIncrementSeed = -1
+            Me.columnCodigo.AutoIncrementStep = -1
+            Me.columnCodigo.AllowDBNull = false
+            Me.columnCodigo.ReadOnly = true
             Me.columnNombre.AllowDBNull = false
             Me.columnNombre.Unique = true
             Me.columnNombre.MaxLength = 200
             Me.columnGenero_1.MaxLength = 50
             Me.columnGenero_2.MaxLength = 50
             Me.columnGenero_3.MaxLength = 50
-            Me.columnDescripcion.MaxLength = 3000
+            Me.columnDescripcion.MaxLength = 5000
             Me.columnFecha_Lanzamiento.MaxLength = 40
             Me.columnSubtitulada.MaxLength = 20
             Me.columnDoblada.MaxLength = 25
             Me.columnRecomendado.MaxLength = 20
             Me.columnEstado.MaxLength = 20
+            Me.columnStat_Serie.MaxLength = 30
+            Me.columnURL.MaxLength = 1000
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -693,6 +752,17 @@ Partial Public Class AnimeDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Codigo() As Integer
+            Get
+                Return CType(Me(Me.tableAnime_Visto.CodigoColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableAnime_Visto.CodigoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property Nombre() As String
             Get
                 Return CType(Me(Me.tableAnime_Visto.NombreColumn),String)
@@ -759,6 +829,21 @@ Partial Public Class AnimeDataSet
             End Get
             Set
                 Me(Me.tableAnime_Visto.CapitulosColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Temporada() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableAnime_Visto.TemporadaColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Temporada' de la tabla 'Anime_Visto' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableAnime_Visto.TemporadaColumn) = value
             End Set
         End Property
         
@@ -854,6 +939,36 @@ Partial Public Class AnimeDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Stat_Serie() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableAnime_Visto.Stat_SerieColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'Stat_Serie' de la tabla 'Anime_Visto' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableAnime_Visto.Stat_SerieColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property URL() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableAnime_Visto.URLColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("El valor de la columna 'URL' de la tabla 'Anime_Visto' es DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableAnime_Visto.URLColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsGenero_1Null() As Boolean
             Return Me.IsNull(Me.tableAnime_Visto.Genero_1Column)
         End Function
@@ -898,6 +1013,18 @@ Partial Public Class AnimeDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetCapitulosNull()
             Me(Me.tableAnime_Visto.CapitulosColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsTemporadaNull() As Boolean
+            Return Me.IsNull(Me.tableAnime_Visto.TemporadaColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetTemporadaNull()
+            Me(Me.tableAnime_Visto.TemporadaColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -970,6 +1097,30 @@ Partial Public Class AnimeDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetEstadoNull()
             Me(Me.tableAnime_Visto.EstadoColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsStat_SerieNull() As Boolean
+            Return Me.IsNull(Me.tableAnime_Visto.Stat_SerieColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetStat_SerieNull()
+            Me(Me.tableAnime_Visto.Stat_SerieColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsURLNull() As Boolean
+            Return Me.IsNull(Me.tableAnime_Visto.URLColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetURLNull()
+            Me(Me.tableAnime_Visto.URLColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -1139,34 +1290,43 @@ Namespace AnimeDataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "Anime_Visto"
+            tableMapping.ColumnMappings.Add("Codigo", "Codigo")
             tableMapping.ColumnMappings.Add("Nombre", "Nombre")
             tableMapping.ColumnMappings.Add("Genero_1", "Genero_1")
             tableMapping.ColumnMappings.Add("Genero_2", "Genero_2")
             tableMapping.ColumnMappings.Add("Genero_3", "Genero_3")
             tableMapping.ColumnMappings.Add("Capitulos", "Capitulos")
+            tableMapping.ColumnMappings.Add("Temporada", "Temporada")
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion")
             tableMapping.ColumnMappings.Add("Fecha_Lanzamiento", "Fecha_Lanzamiento")
             tableMapping.ColumnMappings.Add("Subtitulada", "Subtitulada")
             tableMapping.ColumnMappings.Add("Doblada", "Doblada")
             tableMapping.ColumnMappings.Add("Recomendado", "Recomendado")
             tableMapping.ColumnMappings.Add("Estado", "Estado")
+            tableMapping.ColumnMappings.Add("Stat_Serie", "Stat_Serie")
+            tableMapping.ColumnMappings.Add("URL", "URL")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Anime_Visto] WHERE (([Nombre] = @Original_Nombre) AND ((@IsNul"& _ 
-                "l_Genero_1 = 1 AND [Genero_1] IS NULL) OR ([Genero_1] = @Original_Genero_1)) AND"& _ 
-                " ((@IsNull_Genero_2 = 1 AND [Genero_2] IS NULL) OR ([Genero_2] = @Original_Gener"& _ 
-                "o_2)) AND ((@IsNull_Genero_3 = 1 AND [Genero_3] IS NULL) OR ([Genero_3] = @Origi"& _ 
-                "nal_Genero_3)) AND ((@IsNull_Capitulos = 1 AND [Capitulos] IS NULL) OR ([Capitul"& _ 
-                "os] = @Original_Capitulos)) AND ((@IsNull_Descripcion = 1 AND [Descripcion] IS N"& _ 
-                "ULL) OR ([Descripcion] = @Original_Descripcion)) AND ((@IsNull_Fecha_Lanzamiento"& _ 
-                " = 1 AND [Fecha_Lanzamiento] IS NULL) OR ([Fecha_Lanzamiento] = @Original_Fecha_"& _ 
-                "Lanzamiento)) AND ((@IsNull_Subtitulada = 1 AND [Subtitulada] IS NULL) OR ([Subt"& _ 
-                "itulada] = @Original_Subtitulada)) AND ((@IsNull_Doblada = 1 AND [Doblada] IS NU"& _ 
-                "LL) OR ([Doblada] = @Original_Doblada)) AND ((@IsNull_Recomendado = 1 AND [Recom"& _ 
-                "endado] IS NULL) OR ([Recomendado] = @Original_Recomendado)) AND ((@IsNull_Estad"& _ 
-                "o = 1 AND [Estado] IS NULL) OR ([Estado] = @Original_Estado)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Anime_Visto] WHERE (([Codigo] = @Original_Codigo) AND ([Nombre"& _ 
+                "] = @Original_Nombre) AND ((@IsNull_Genero_1 = 1 AND [Genero_1] IS NULL) OR ([Ge"& _ 
+                "nero_1] = @Original_Genero_1)) AND ((@IsNull_Genero_2 = 1 AND [Genero_2] IS NULL"& _ 
+                ") OR ([Genero_2] = @Original_Genero_2)) AND ((@IsNull_Genero_3 = 1 AND [Genero_3"& _ 
+                "] IS NULL) OR ([Genero_3] = @Original_Genero_3)) AND ((@IsNull_Capitulos = 1 AND"& _ 
+                " [Capitulos] IS NULL) OR ([Capitulos] = @Original_Capitulos)) AND ((@IsNull_Temp"& _ 
+                "orada = 1 AND [Temporada] IS NULL) OR ([Temporada] = @Original_Temporada)) AND ("& _ 
+                "(@IsNull_Descripcion = 1 AND [Descripcion] IS NULL) OR ([Descripcion] = @Origina"& _ 
+                "l_Descripcion)) AND ((@IsNull_Fecha_Lanzamiento = 1 AND [Fecha_Lanzamiento] IS N"& _ 
+                "ULL) OR ([Fecha_Lanzamiento] = @Original_Fecha_Lanzamiento)) AND ((@IsNull_Subti"& _ 
+                "tulada = 1 AND [Subtitulada] IS NULL) OR ([Subtitulada] = @Original_Subtitulada)"& _ 
+                ") AND ((@IsNull_Doblada = 1 AND [Doblada] IS NULL) OR ([Doblada] = @Original_Dob"& _ 
+                "lada)) AND ((@IsNull_Recomendado = 1 AND [Recomendado] IS NULL) OR ([Recomendado"& _ 
+                "] = @Original_Recomendado)) AND ((@IsNull_Estado = 1 AND [Estado] IS NULL) OR (["& _ 
+                "Estado] = @Original_Estado)) AND ((@IsNull_Stat_Serie = 1 AND [Stat_Serie] IS NU"& _ 
+                "LL) OR ([Stat_Serie] = @Original_Stat_Serie)) AND ((@IsNull_URL = 1 AND [URL] IS"& _ 
+                " NULL) OR ([URL] = @Original_URL)))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Codigo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Codigo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Genero_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_1", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Genero_1", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_1", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -1176,6 +1336,8 @@ Namespace AnimeDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Genero_3", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_3", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Capitulos", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Capitulos", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Capitulos", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Capitulos", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Temporada", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Temporada", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Temporada", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Temporada", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Descripcion", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Descripcion", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Fecha_Lanzamiento", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha_Lanzamiento", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -1188,60 +1350,77 @@ Namespace AnimeDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Recomendado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Recomendado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Estado", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estado", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Stat_Serie", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Stat_Serie", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Stat_Serie", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Stat_Serie", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_URL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "URL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_URL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "URL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Anime_Visto] ([Nombre], [Genero_1], [Genero_2], [Genero_3], [C"& _ 
-                "apitulos], [Descripcion], [Fecha_Lanzamiento], [Subtitulada], [Doblada], [Recome"& _ 
-                "ndado], [Estado]) VALUES (@Nombre, @Genero_1, @Genero_2, @Genero_3, @Capitulos, "& _ 
-                "@Descripcion, @Fecha_Lanzamiento, @Subtitulada, @Doblada, @Recomendado, @Estado)"& _ 
-                ";"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Descripcion, Fecha_La"& _ 
-                "nzamiento, Subtitulada, Doblada, Recomendado, Estado FROM Anime_Visto WHERE (Nom"& _ 
-                "bre = @Nombre)"
+                "apitulos], [Temporada], [Descripcion], [Fecha_Lanzamiento], [Subtitulada], [Dobl"& _ 
+                "ada], [Recomendado], [Estado], [Stat_Serie], [URL]) VALUES (@Nombre, @Genero_1, "& _ 
+                "@Genero_2, @Genero_3, @Capitulos, @Temporada, @Descripcion, @Fecha_Lanzamiento, "& _ 
+                "@Subtitulada, @Doblada, @Recomendado, @Estado, @Stat_Serie, @URL);"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Codig"& _ 
+                "o, Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Temporada, Descripcion, Fech"& _ 
+                "a_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado, Stat_Serie, URL FROM A"& _ 
+                "nime_Visto WHERE (Nombre = @Nombre)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero_1", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero_2", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_2", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero_3", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_3", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Capitulos", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Capitulos", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Temporada", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Temporada", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Descripcion", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Fecha_Lanzamiento", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha_Lanzamiento", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Subtitulada", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Subtitulada", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Doblada", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Doblada", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Recomendado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Recomendado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Stat_Serie", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Stat_Serie", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@URL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "URL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
             Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Anime_Visto] SET [Nombre] = @Nombre, [Genero_1] = @Genero_1, [Gener"& _ 
-                "o_2] = @Genero_2, [Genero_3] = @Genero_3, [Capitulos] = @Capitulos, [Descripcion"& _ 
-                "] = @Descripcion, [Fecha_Lanzamiento] = @Fecha_Lanzamiento, [Subtitulada] = @Sub"& _ 
-                "titulada, [Doblada] = @Doblada, [Recomendado] = @Recomendado, [Estado] = @Estado"& _ 
-                " WHERE (([Nombre] = @Original_Nombre) AND ((@IsNull_Genero_1 = 1 AND [Genero_1] "& _ 
-                "IS NULL) OR ([Genero_1] = @Original_Genero_1)) AND ((@IsNull_Genero_2 = 1 AND [G"& _ 
-                "enero_2] IS NULL) OR ([Genero_2] = @Original_Genero_2)) AND ((@IsNull_Genero_3 ="& _ 
-                " 1 AND [Genero_3] IS NULL) OR ([Genero_3] = @Original_Genero_3)) AND ((@IsNull_C"& _ 
-                "apitulos = 1 AND [Capitulos] IS NULL) OR ([Capitulos] = @Original_Capitulos)) AN"& _ 
-                "D ((@IsNull_Descripcion = 1 AND [Descripcion] IS NULL) OR ([Descripcion] = @Orig"& _ 
-                "inal_Descripcion)) AND ((@IsNull_Fecha_Lanzamiento = 1 AND [Fecha_Lanzamiento] I"& _ 
-                "S NULL) OR ([Fecha_Lanzamiento] = @Original_Fecha_Lanzamiento)) AND ((@IsNull_Su"& _ 
-                "btitulada = 1 AND [Subtitulada] IS NULL) OR ([Subtitulada] = @Original_Subtitula"& _ 
-                "da)) AND ((@IsNull_Doblada = 1 AND [Doblada] IS NULL) OR ([Doblada] = @Original_"& _ 
-                "Doblada)) AND ((@IsNull_Recomendado = 1 AND [Recomendado] IS NULL) OR ([Recomend"& _ 
-                "ado] = @Original_Recomendado)) AND ((@IsNull_Estado = 1 AND [Estado] IS NULL) OR"& _ 
-                " ([Estado] = @Original_Estado)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT Nombre, Genero_1, Genero_2, Genero_3, "& _ 
-                "Capitulos, Descripcion, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Es"& _ 
-                "tado FROM Anime_Visto WHERE (Nombre = @Nombre)"
+                "o_2] = @Genero_2, [Genero_3] = @Genero_3, [Capitulos] = @Capitulos, [Temporada] "& _ 
+                "= @Temporada, [Descripcion] = @Descripcion, [Fecha_Lanzamiento] = @Fecha_Lanzami"& _ 
+                "ento, [Subtitulada] = @Subtitulada, [Doblada] = @Doblada, [Recomendado] = @Recom"& _ 
+                "endado, [Estado] = @Estado, [Stat_Serie] = @Stat_Serie, [URL] = @URL WHERE (([Co"& _ 
+                "digo] = @Original_Codigo) AND ([Nombre] = @Original_Nombre) AND ((@IsNull_Genero"& _ 
+                "_1 = 1 AND [Genero_1] IS NULL) OR ([Genero_1] = @Original_Genero_1)) AND ((@IsNu"& _ 
+                "ll_Genero_2 = 1 AND [Genero_2] IS NULL) OR ([Genero_2] = @Original_Genero_2)) AN"& _ 
+                "D ((@IsNull_Genero_3 = 1 AND [Genero_3] IS NULL) OR ([Genero_3] = @Original_Gene"& _ 
+                "ro_3)) AND ((@IsNull_Capitulos = 1 AND [Capitulos] IS NULL) OR ([Capitulos] = @O"& _ 
+                "riginal_Capitulos)) AND ((@IsNull_Temporada = 1 AND [Temporada] IS NULL) OR ([Te"& _ 
+                "mporada] = @Original_Temporada)) AND ((@IsNull_Descripcion = 1 AND [Descripcion]"& _ 
+                " IS NULL) OR ([Descripcion] = @Original_Descripcion)) AND ((@IsNull_Fecha_Lanzam"& _ 
+                "iento = 1 AND [Fecha_Lanzamiento] IS NULL) OR ([Fecha_Lanzamiento] = @Original_F"& _ 
+                "echa_Lanzamiento)) AND ((@IsNull_Subtitulada = 1 AND [Subtitulada] IS NULL) OR ("& _ 
+                "[Subtitulada] = @Original_Subtitulada)) AND ((@IsNull_Doblada = 1 AND [Doblada] "& _ 
+                "IS NULL) OR ([Doblada] = @Original_Doblada)) AND ((@IsNull_Recomendado = 1 AND ["& _ 
+                "Recomendado] IS NULL) OR ([Recomendado] = @Original_Recomendado)) AND ((@IsNull_"& _ 
+                "Estado = 1 AND [Estado] IS NULL) OR ([Estado] = @Original_Estado)) AND ((@IsNull"& _ 
+                "_Stat_Serie = 1 AND [Stat_Serie] IS NULL) OR ([Stat_Serie] = @Original_Stat_Seri"& _ 
+                "e)) AND ((@IsNull_URL = 1 AND [URL] IS NULL) OR ([URL] = @Original_URL)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELE"& _ 
+                "CT Codigo, Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Temporada, Descripci"& _ 
+                "on, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado, Stat_Serie, UR"& _ 
+                "L FROM Anime_Visto WHERE (Nombre = @Nombre)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero_1", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_1", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero_2", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_2", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Genero_3", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_3", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Capitulos", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Capitulos", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Temporada", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Temporada", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Descripcion", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Fecha_Lanzamiento", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha_Lanzamiento", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Subtitulada", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Subtitulada", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Doblada", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Doblada", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Recomendado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Recomendado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estado", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Stat_Serie", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Stat_Serie", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@URL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "URL", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Codigo", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Codigo", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Nombre", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Nombre", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Genero_1", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_1", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Genero_1", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_1", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -1251,6 +1430,8 @@ Namespace AnimeDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Genero_3", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Genero_3", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Capitulos", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Capitulos", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Capitulos", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Capitulos", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Temporada", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Temporada", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Temporada", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Temporada", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Descripcion", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Descripcion", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Descripcion", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Fecha_Lanzamiento", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Fecha_Lanzamiento", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -1263,6 +1444,10 @@ Namespace AnimeDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Recomendado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Recomendado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Estado", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estado", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Estado", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Estado", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_Stat_Serie", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Stat_Serie", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_Stat_Serie", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Stat_Serie", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_URL", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "URL", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_URL", Global.System.Data.SqlDbType.VarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "URL", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1278,8 +1463,9 @@ Namespace AnimeDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Descripcion, Fecha_Lanzam"& _ 
-                "iento, Subtitulada, Doblada, Recomendado, Estado FROM dbo.Anime_Visto"
+            Me._commandCollection(0).CommandText = "SELECT Codigo, Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Temporada, Descri"& _ 
+                "pcion, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado, Stat_Serie,"& _ 
+                " URL FROM dbo.Anime_Visto"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -1339,81 +1525,103 @@ Namespace AnimeDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_Nombre As String, ByVal Original_Genero_1 As String, ByVal Original_Genero_2 As String, ByVal Original_Genero_3 As String, ByVal Original_Capitulos As Global.System.Nullable(Of Integer), ByVal Original_Descripcion As String, ByVal Original_Fecha_Lanzamiento As String, ByVal Original_Subtitulada As String, ByVal Original_Doblada As String, ByVal Original_Recomendado As String, ByVal Original_Estado As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_Codigo As Integer, ByVal Original_Nombre As String, ByVal Original_Genero_1 As String, ByVal Original_Genero_2 As String, ByVal Original_Genero_3 As String, ByVal Original_Capitulos As Global.System.Nullable(Of Integer), ByVal Original_Temporada As Global.System.Nullable(Of Integer), ByVal Original_Descripcion As String, ByVal Original_Fecha_Lanzamiento As String, ByVal Original_Subtitulada As String, ByVal Original_Doblada As String, ByVal Original_Recomendado As String, ByVal Original_Estado As String, ByVal Original_Stat_Serie As String, ByVal Original_URL As String) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Codigo,Integer)
             If (Original_Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Nombre")
             Else
-                Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_Nombre,String)
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_Nombre,String)
             End If
             If (Original_Genero_1 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_Genero_1,String)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Genero_1,String)
             End If
             If (Original_Genero_2 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_Genero_2,String)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_Genero_2,String)
             End If
             If (Original_Genero_3 Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_Genero_3,String)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_Genero_3,String)
             End If
             If (Original_Capitulos.HasValue = true) Then
-                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(Original_Capitulos.Value,Integer)
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(Original_Capitulos.Value,Integer)
             Else
-                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(8).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(8).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(9).Value = Global.System.DBNull.Value
+            End If
+            If (Original_Temporada.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(Original_Temporada.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(11).Value = Global.System.DBNull.Value
             End If
             If (Original_Descripcion Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(10).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(13).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(9).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(Original_Descripcion,String)
+                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(Original_Descripcion,String)
             End If
             If (Original_Fecha_Lanzamiento Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(12).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(15).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(Original_Fecha_Lanzamiento,String)
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(Original_Fecha_Lanzamiento,String)
             End If
             If (Original_Subtitulada Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(14).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(Original_Subtitulada,String)
+                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(Original_Subtitulada,String)
             End If
             If (Original_Doblada Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(16).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(19).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(16).Value = CType(Original_Doblada,String)
+                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(Original_Doblada,String)
             End If
             If (Original_Recomendado Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(18).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(21).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(17).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(18).Value = CType(Original_Recomendado,String)
+                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(21).Value = CType(Original_Recomendado,String)
             End If
             If (Original_Estado Is Nothing) Then
-                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(1,Object)
-                Me.Adapter.DeleteCommand.Parameters(20).Value = Global.System.DBNull.Value
+                Me.Adapter.DeleteCommand.Parameters(22).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(23).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0,Object)
-                Me.Adapter.DeleteCommand.Parameters(20).Value = CType(Original_Estado,String)
+                Me.Adapter.DeleteCommand.Parameters(22).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(23).Value = CType(Original_Estado,String)
+            End If
+            If (Original_Stat_Serie Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(24).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(25).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(24).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(25).Value = CType(Original_Stat_Serie,String)
+            End If
+            If (Original_URL Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(26).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(27).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(26).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(27).Value = CType(Original_URL,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1434,7 +1642,7 @@ Namespace AnimeDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal Nombre As String, ByVal Genero_1 As String, ByVal Genero_2 As String, ByVal Genero_3 As String, ByVal Capitulos As Global.System.Nullable(Of Integer), ByVal Descripcion As String, ByVal Fecha_Lanzamiento As String, ByVal Subtitulada As String, ByVal Doblada As String, ByVal Recomendado As String, ByVal Estado As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal Nombre As String, ByVal Genero_1 As String, ByVal Genero_2 As String, ByVal Genero_3 As String, ByVal Capitulos As Global.System.Nullable(Of Integer), ByVal Temporada As Global.System.Nullable(Of Integer), ByVal Descripcion As String, ByVal Fecha_Lanzamiento As String, ByVal Subtitulada As String, ByVal Doblada As String, ByVal Recomendado As String, ByVal Estado As String, ByVal Stat_Serie As String, ByVal URL As String) As Integer
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
             Else
@@ -1460,35 +1668,50 @@ Namespace AnimeDataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
-            If (Descripcion Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
+            If (Temporada.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(Temporada.Value,Integer)
             Else
-                Me.Adapter.InsertCommand.Parameters(5).Value = CType(Descripcion,String)
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
             End If
-            If (Fecha_Lanzamiento Is Nothing) Then
+            If (Descripcion Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(6).Value = CType(Fecha_Lanzamiento,String)
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(Descripcion,String)
             End If
-            If (Subtitulada Is Nothing) Then
+            If (Fecha_Lanzamiento Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(7).Value = CType(Subtitulada,String)
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(Fecha_Lanzamiento,String)
             End If
-            If (Doblada Is Nothing) Then
+            If (Subtitulada Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Doblada,String)
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Subtitulada,String)
             End If
-            If (Recomendado Is Nothing) Then
+            If (Doblada Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(9).Value = CType(Recomendado,String)
+                Me.Adapter.InsertCommand.Parameters(9).Value = CType(Doblada,String)
             End If
-            If (Estado Is Nothing) Then
+            If (Recomendado Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(10).Value = CType(Estado,String)
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(Recomendado,String)
+            End If
+            If (Estado Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(11).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(Estado,String)
+            End If
+            If (Stat_Serie Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(12).Value = CType(Stat_Serie,String)
+            End If
+            If (URL Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(13).Value = CType(URL,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1515,23 +1738,30 @@ Namespace AnimeDataSetTableAdapters
                     ByVal Genero_2 As String,  _
                     ByVal Genero_3 As String,  _
                     ByVal Capitulos As Global.System.Nullable(Of Integer),  _
+                    ByVal Temporada As Global.System.Nullable(Of Integer),  _
                     ByVal Descripcion As String,  _
                     ByVal Fecha_Lanzamiento As String,  _
                     ByVal Subtitulada As String,  _
                     ByVal Doblada As String,  _
                     ByVal Recomendado As String,  _
                     ByVal Estado As String,  _
+                    ByVal Stat_Serie As String,  _
+                    ByVal URL As String,  _
+                    ByVal Original_Codigo As Integer,  _
                     ByVal Original_Nombre As String,  _
                     ByVal Original_Genero_1 As String,  _
                     ByVal Original_Genero_2 As String,  _
                     ByVal Original_Genero_3 As String,  _
                     ByVal Original_Capitulos As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Temporada As Global.System.Nullable(Of Integer),  _
                     ByVal Original_Descripcion As String,  _
                     ByVal Original_Fecha_Lanzamiento As String,  _
                     ByVal Original_Subtitulada As String,  _
                     ByVal Original_Doblada As String,  _
                     ByVal Original_Recomendado As String,  _
-                    ByVal Original_Estado As String) As Integer
+                    ByVal Original_Estado As String,  _
+                    ByVal Original_Stat_Serie As String,  _
+                    ByVal Original_URL As String) As Integer
             If (Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Nombre")
             Else
@@ -1557,110 +1787,147 @@ Namespace AnimeDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
             End If
-            If (Descripcion Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            If (Temporada.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Temporada.Value,Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Descripcion,String)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
             End If
-            If (Fecha_Lanzamiento Is Nothing) Then
+            If (Descripcion Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Fecha_Lanzamiento,String)
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Descripcion,String)
             End If
-            If (Subtitulada Is Nothing) Then
+            If (Fecha_Lanzamiento Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Subtitulada,String)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Fecha_Lanzamiento,String)
             End If
-            If (Doblada Is Nothing) Then
+            If (Subtitulada Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Doblada,String)
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Subtitulada,String)
             End If
-            If (Recomendado Is Nothing) Then
+            If (Doblada Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Recomendado,String)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Doblada,String)
             End If
-            If (Estado Is Nothing) Then
+            If (Recomendado Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Estado,String)
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Recomendado,String)
             End If
+            If (Estado Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Estado,String)
+            End If
+            If (Stat_Serie Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(Stat_Serie,String)
+            End If
+            If (URL Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(URL,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_Codigo,Integer)
             If (Original_Nombre Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("Original_Nombre")
             Else
-                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Original_Nombre,String)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_Nombre,String)
             End If
             If (Original_Genero_1 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_Genero_1,String)
-            End If
-            If (Original_Genero_2 Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_Genero_2,String)
-            End If
-            If (Original_Genero_3 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_Genero_3,String)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_Genero_1,String)
             End If
-            If (Original_Capitulos.HasValue = true) Then
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_Capitulos.Value,Integer)
-            Else
+            If (Original_Genero_2 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_Genero_2,String)
             End If
-            If (Original_Descripcion Is Nothing) Then
+            If (Original_Genero_3 Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(20).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_Descripcion,String)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_Genero_3,String)
             End If
-            If (Original_Fecha_Lanzamiento Is Nothing) Then
+            If (Original_Capitulos.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_Capitulos.Value,Integer)
+            Else
                 Me.Adapter.UpdateCommand.Parameters(22).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_Fecha_Lanzamiento,String)
             End If
-            If (Original_Subtitulada Is Nothing) Then
+            If (Original_Temporada.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_Temporada.Value,Integer)
+            Else
                 Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_Subtitulada,String)
             End If
-            If (Original_Doblada Is Nothing) Then
+            If (Original_Descripcion Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_Doblada,String)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_Descripcion,String)
             End If
-            If (Original_Recomendado Is Nothing) Then
+            If (Original_Fecha_Lanzamiento Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_Recomendado,String)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_Fecha_Lanzamiento,String)
             End If
-            If (Original_Estado Is Nothing) Then
+            If (Original_Subtitulada Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
                 Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_Estado,String)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_Subtitulada,String)
+            End If
+            If (Original_Doblada Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(Original_Doblada,String)
+            End If
+            If (Original_Recomendado Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(35).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(35).Value = CType(Original_Recomendado,String)
+            End If
+            If (Original_Estado Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(37).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(36).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(37).Value = CType(Original_Estado,String)
+            End If
+            If (Original_Stat_Serie Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(38).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(39).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(38).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(39).Value = CType(Original_Stat_Serie,String)
+            End If
+            If (Original_URL Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(40).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(41).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(40).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(41).Value = CType(Original_URL,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -1686,24 +1953,31 @@ Namespace AnimeDataSetTableAdapters
                     ByVal Genero_2 As String,  _
                     ByVal Genero_3 As String,  _
                     ByVal Capitulos As Global.System.Nullable(Of Integer),  _
+                    ByVal Temporada As Global.System.Nullable(Of Integer),  _
                     ByVal Descripcion As String,  _
                     ByVal Fecha_Lanzamiento As String,  _
                     ByVal Subtitulada As String,  _
                     ByVal Doblada As String,  _
                     ByVal Recomendado As String,  _
                     ByVal Estado As String,  _
+                    ByVal Stat_Serie As String,  _
+                    ByVal URL As String,  _
+                    ByVal Original_Codigo As Integer,  _
                     ByVal Original_Nombre As String,  _
                     ByVal Original_Genero_1 As String,  _
                     ByVal Original_Genero_2 As String,  _
                     ByVal Original_Genero_3 As String,  _
                     ByVal Original_Capitulos As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Temporada As Global.System.Nullable(Of Integer),  _
                     ByVal Original_Descripcion As String,  _
                     ByVal Original_Fecha_Lanzamiento As String,  _
                     ByVal Original_Subtitulada As String,  _
                     ByVal Original_Doblada As String,  _
                     ByVal Original_Recomendado As String,  _
-                    ByVal Original_Estado As String) As Integer
-            Return Me.Update(Original_Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Descripcion, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado, Original_Nombre, Original_Genero_1, Original_Genero_2, Original_Genero_3, Original_Capitulos, Original_Descripcion, Original_Fecha_Lanzamiento, Original_Subtitulada, Original_Doblada, Original_Recomendado, Original_Estado)
+                    ByVal Original_Estado As String,  _
+                    ByVal Original_Stat_Serie As String,  _
+                    ByVal Original_URL As String) As Integer
+            Return Me.Update(Original_Nombre, Genero_1, Genero_2, Genero_3, Capitulos, Temporada, Descripcion, Fecha_Lanzamiento, Subtitulada, Doblada, Recomendado, Estado, Stat_Serie, URL, Original_Codigo, Original_Nombre, Original_Genero_1, Original_Genero_2, Original_Genero_3, Original_Capitulos, Original_Temporada, Original_Descripcion, Original_Fecha_Lanzamiento, Original_Subtitulada, Original_Doblada, Original_Recomendado, Original_Estado, Original_Stat_Serie, Original_URL)
         End Function
     End Class
     
