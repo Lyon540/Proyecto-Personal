@@ -27,7 +27,7 @@ Public Class Form1
                 .Parameters.AddWithValue("@Capitulos", Me.Txt_Capitulos.Text)
                 .Parameters.AddWithValue("@Temporada", Me.Cbo_Temp.SelectedItem)
                 .Parameters.AddWithValue("@Descripcion", Me.Txt_Descripcion.Text)
-                .Parameters.AddWithValue("@Fecha_Lanzamiento", Me.Txt_Lanzamiento.Text)
+                .Parameters.AddWithValue("@Año_Lanzamiento", Me.Txt_Lanzamiento.Text)
                 .Parameters.AddWithValue("@Subtitulada", Me.Cbo_Subtitulada.SelectedItem)
                 .Parameters.AddWithValue("@Doblada", Me.Cbo_Doblada.SelectedItem)
                 .Parameters.AddWithValue("@Recomendado", Me.Cbo_Recom.SelectedItem)
