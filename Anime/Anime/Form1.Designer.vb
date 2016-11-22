@@ -22,7 +22,8 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
+        Me.Btn_Cerrar = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -46,37 +47,12 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Txt_Capitulos = New System.Windows.Forms.TextBox()
-        Me.Cbo_Gen3 = New System.Windows.Forms.ComboBox()
-        Me.Cbo_Gen2 = New System.Windows.Forms.ComboBox()
-        Me.Cbo_Gen1 = New System.Windows.Forms.ComboBox()
+        Me.Cbo_Gen = New System.Windows.Forms.ComboBox()
         Me.Txt_Nombre = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Btn_Cerrar = New System.Windows.Forms.Button()
-        Me.AnimeDataSet = New Anime.AnimeDataSet()
-        Me.AnimeVistoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Anime_VistoTableAdapter = New Anime.AnimeDataSetTableAdapters.Anime_VistoTableAdapter()
-        Me.CodigoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Genero3DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CapitulosDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TemporadaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescripcionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaLanzamientoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SubtituladaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DobladaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RecomendadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EstadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StatSerieDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.URLDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -95,58 +71,70 @@ Partial Class Form1
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label29 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.ComboBox10 = New System.Windows.Forms.ComboBox()
-        Me.Label30 = New System.Windows.Forms.Label()
         Me.ComboBox11 = New System.Windows.Forms.ComboBox()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.ComboBox12 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox13 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox14 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox15 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.ComboBox12 = New System.Windows.Forms.ComboBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.ComboBox16 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox17 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox18 = New System.Windows.Forms.ComboBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AnimeDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AnimeVistoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Btn_Cerrar
+        '
+        Me.Btn_Cerrar.Location = New System.Drawing.Point(798, 498)
+        Me.Btn_Cerrar.Name = "Btn_Cerrar"
+        Me.Btn_Cerrar.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Cerrar.TabIndex = 9
+        Me.Btn_Cerrar.Text = "Cerrar"
+        Me.Btn_Cerrar.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(-1, 237)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(882, 255)
+        Me.DataGridView1.TabIndex = 8
         '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(1, 2)
+        Me.TabControl1.Location = New System.Drawing.Point(-5, 13)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(890, 209)
-        Me.TabControl1.TabIndex = 1
+        Me.TabControl1.TabIndex = 7
         '
         'TabPage1
         '
@@ -171,13 +159,9 @@ Partial Class Form1
         Me.TabPage1.Controls.Add(Me.Label8)
         Me.TabPage1.Controls.Add(Me.Label7)
         Me.TabPage1.Controls.Add(Me.Txt_Capitulos)
-        Me.TabPage1.Controls.Add(Me.Cbo_Gen3)
-        Me.TabPage1.Controls.Add(Me.Cbo_Gen2)
-        Me.TabPage1.Controls.Add(Me.Cbo_Gen1)
+        Me.TabPage1.Controls.Add(Me.Cbo_Gen)
         Me.TabPage1.Controls.Add(Me.Txt_Nombre)
         Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.Label4)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
@@ -237,7 +221,7 @@ Partial Class Form1
         Me.Cbo_Temp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_Temp.FormattingEnabled = True
         Me.Cbo_Temp.Items.AddRange(New Object() {"", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.Cbo_Temp.Location = New System.Drawing.Point(74, 145)
+        Me.Cbo_Temp.Location = New System.Drawing.Point(109, 87)
         Me.Cbo_Temp.Name = "Cbo_Temp"
         Me.Cbo_Temp.Size = New System.Drawing.Size(67, 21)
         Me.Cbo_Temp.TabIndex = 30
@@ -245,7 +229,7 @@ Partial Class Form1
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(7, 148)
+        Me.Label18.Location = New System.Drawing.Point(7, 93)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(61, 13)
         Me.Label18.TabIndex = 29
@@ -256,7 +240,7 @@ Partial Class Form1
         Me.Cbo_Doblada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_Doblada.FormattingEnabled = True
         Me.Cbo_Doblada.Items.AddRange(New Object() {"", "Español", "Ingles", "Japones (Original)"})
-        Me.Cbo_Doblada.Location = New System.Drawing.Point(374, 91)
+        Me.Cbo_Doblada.Location = New System.Drawing.Point(461, 65)
         Me.Cbo_Doblada.Name = "Cbo_Doblada"
         Me.Cbo_Doblada.Size = New System.Drawing.Size(99, 21)
         Me.Cbo_Doblada.TabIndex = 28
@@ -266,7 +250,7 @@ Partial Class Form1
         Me.Cbo_Subtitulada.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_Subtitulada.FormattingEnabled = True
         Me.Cbo_Subtitulada.Items.AddRange(New Object() {"", "Español", "Ingles"})
-        Me.Cbo_Subtitulada.Location = New System.Drawing.Point(374, 64)
+        Me.Cbo_Subtitulada.Location = New System.Drawing.Point(461, 38)
         Me.Cbo_Subtitulada.Name = "Cbo_Subtitulada"
         Me.Cbo_Subtitulada.Size = New System.Drawing.Size(99, 21)
         Me.Cbo_Subtitulada.TabIndex = 27
@@ -276,7 +260,7 @@ Partial Class Form1
         Me.Cbo_Recom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_Recom.FormattingEnabled = True
         Me.Cbo_Recom.Items.AddRange(New Object() {"", "Si", "Quizas", "No del todo", "No"})
-        Me.Cbo_Recom.Location = New System.Drawing.Point(374, 118)
+        Me.Cbo_Recom.Location = New System.Drawing.Point(461, 92)
         Me.Cbo_Recom.Name = "Cbo_Recom"
         Me.Cbo_Recom.Size = New System.Drawing.Size(121, 21)
         Me.Cbo_Recom.TabIndex = 26
@@ -286,7 +270,7 @@ Partial Class Form1
         Me.Cbo_Edo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Cbo_Edo.FormattingEnabled = True
         Me.Cbo_Edo.Items.AddRange(New Object() {"", "Visto", "No Visto", "Iniciado", "Casi terminado"})
-        Me.Cbo_Edo.Location = New System.Drawing.Point(374, 145)
+        Me.Cbo_Edo.Location = New System.Drawing.Point(461, 119)
         Me.Cbo_Edo.Name = "Cbo_Edo"
         Me.Cbo_Edo.Size = New System.Drawing.Size(121, 21)
         Me.Cbo_Edo.TabIndex = 25
@@ -302,14 +286,14 @@ Partial Class Form1
         '
         'Txt_Lanzamiento
         '
-        Me.Txt_Lanzamiento.Location = New System.Drawing.Point(374, 38)
+        Me.Txt_Lanzamiento.Location = New System.Drawing.Point(461, 12)
         Me.Txt_Lanzamiento.Name = "Txt_Lanzamiento"
         Me.Txt_Lanzamiento.Size = New System.Drawing.Size(99, 20)
         Me.Txt_Lanzamiento.TabIndex = 21
         '
         'Txt_Descripcion
         '
-        Me.Txt_Descripcion.Location = New System.Drawing.Point(374, 12)
+        Me.Txt_Descripcion.Location = New System.Drawing.Point(109, 118)
         Me.Txt_Descripcion.Name = "Txt_Descripcion"
         Me.Txt_Descripcion.Size = New System.Drawing.Size(198, 20)
         Me.Txt_Descripcion.TabIndex = 20
@@ -317,7 +301,7 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(272, 148)
+        Me.Label12.Location = New System.Drawing.Point(351, 122)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(40, 13)
         Me.Label12.TabIndex = 19
@@ -326,7 +310,7 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(272, 121)
+        Me.Label11.Location = New System.Drawing.Point(351, 95)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(77, 13)
         Me.Label11.TabIndex = 18
@@ -335,7 +319,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(272, 94)
+        Me.Label10.Location = New System.Drawing.Point(351, 68)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(47, 13)
         Me.Label10.TabIndex = 17
@@ -344,7 +328,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(272, 67)
+        Me.Label9.Location = New System.Drawing.Point(351, 41)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(60, 13)
         Me.Label9.TabIndex = 16
@@ -353,16 +337,16 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(272, 41)
+        Me.Label8.Location = New System.Drawing.Point(351, 15)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(100, 13)
+        Me.Label8.Size = New System.Drawing.Size(104, 13)
         Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Fecha Lanzamiento"
+        Me.Label8.Text = "Año de Lanzamiento"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(272, 15)
+        Me.Label7.Location = New System.Drawing.Point(7, 121)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(63, 13)
         Me.Label7.TabIndex = 14
@@ -370,44 +354,24 @@ Partial Class Form1
         '
         'Txt_Capitulos
         '
-        Me.Txt_Capitulos.Location = New System.Drawing.Point(74, 119)
+        Me.Txt_Capitulos.Location = New System.Drawing.Point(109, 61)
         Me.Txt_Capitulos.Name = "Txt_Capitulos"
         Me.Txt_Capitulos.Size = New System.Drawing.Size(67, 20)
         Me.Txt_Capitulos.TabIndex = 13
         '
-        'Cbo_Gen3
+        'Cbo_Gen
         '
-        Me.Cbo_Gen3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Cbo_Gen3.FormattingEnabled = True
-        Me.Cbo_Gen3.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
-        Me.Cbo_Gen3.Location = New System.Drawing.Point(74, 92)
-        Me.Cbo_Gen3.Name = "Cbo_Gen3"
-        Me.Cbo_Gen3.Size = New System.Drawing.Size(82, 21)
-        Me.Cbo_Gen3.TabIndex = 12
-        '
-        'Cbo_Gen2
-        '
-        Me.Cbo_Gen2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Cbo_Gen2.FormattingEnabled = True
-        Me.Cbo_Gen2.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
-        Me.Cbo_Gen2.Location = New System.Drawing.Point(74, 65)
-        Me.Cbo_Gen2.Name = "Cbo_Gen2"
-        Me.Cbo_Gen2.Size = New System.Drawing.Size(82, 21)
-        Me.Cbo_Gen2.TabIndex = 11
-        '
-        'Cbo_Gen1
-        '
-        Me.Cbo_Gen1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Cbo_Gen1.FormattingEnabled = True
-        Me.Cbo_Gen1.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
-        Me.Cbo_Gen1.Location = New System.Drawing.Point(74, 38)
-        Me.Cbo_Gen1.Name = "Cbo_Gen1"
-        Me.Cbo_Gen1.Size = New System.Drawing.Size(82, 21)
-        Me.Cbo_Gen1.TabIndex = 10
+        Me.Cbo_Gen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_Gen.FormattingEnabled = True
+        Me.Cbo_Gen.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
+        Me.Cbo_Gen.Location = New System.Drawing.Point(109, 35)
+        Me.Cbo_Gen.Name = "Cbo_Gen"
+        Me.Cbo_Gen.Size = New System.Drawing.Size(82, 21)
+        Me.Cbo_Gen.TabIndex = 10
         '
         'Txt_Nombre
         '
-        Me.Txt_Nombre.Location = New System.Drawing.Point(74, 12)
+        Me.Txt_Nombre.Location = New System.Drawing.Point(109, 9)
         Me.Txt_Nombre.Name = "Txt_Nombre"
         Me.Txt_Nombre.Size = New System.Drawing.Size(157, 20)
         Me.Txt_Nombre.TabIndex = 9
@@ -415,38 +379,20 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 122)
+        Me.Label6.Location = New System.Drawing.Point(7, 67)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(50, 13)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Capitulos"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(7, 95)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 13)
-        Me.Label5.TabIndex = 5
-        Me.Label5.Text = "Genero 3"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 68)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 13)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Genero 2"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(7, 41)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 13)
+        Me.Label3.Size = New System.Drawing.Size(42, 13)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Genero 1"
+        Me.Label3.Text = "Genero"
         '
         'Label2
         '
@@ -483,171 +429,6 @@ Partial Class Form1
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Buscar Anime"
         Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Controls.Add(Me.PictureBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox6)
-        Me.TabPage2.Controls.Add(Me.Label29)
-        Me.TabPage2.Controls.Add(Me.ComboBox10)
-        Me.TabPage2.Controls.Add(Me.Label30)
-        Me.TabPage2.Controls.Add(Me.ComboBox11)
-        Me.TabPage2.Controls.Add(Me.Label31)
-        Me.TabPage2.Controls.Add(Me.ComboBox12)
-        Me.TabPage2.Controls.Add(Me.ComboBox13)
-        Me.TabPage2.Controls.Add(Me.ComboBox14)
-        Me.TabPage2.Controls.Add(Me.ComboBox15)
-        Me.TabPage2.Controls.Add(Me.Button2)
-        Me.TabPage2.Controls.Add(Me.TextBox7)
-        Me.TabPage2.Controls.Add(Me.TextBox8)
-        Me.TabPage2.Controls.Add(Me.Label32)
-        Me.TabPage2.Controls.Add(Me.Label33)
-        Me.TabPage2.Controls.Add(Me.Label34)
-        Me.TabPage2.Controls.Add(Me.Label35)
-        Me.TabPage2.Controls.Add(Me.Label36)
-        Me.TabPage2.Controls.Add(Me.Label37)
-        Me.TabPage2.Controls.Add(Me.TextBox9)
-        Me.TabPage2.Controls.Add(Me.ComboBox16)
-        Me.TabPage2.Controls.Add(Me.ComboBox17)
-        Me.TabPage2.Controls.Add(Me.ComboBox18)
-        Me.TabPage2.Controls.Add(Me.TextBox10)
-        Me.TabPage2.Controls.Add(Me.Label38)
-        Me.TabPage2.Controls.Add(Me.Label39)
-        Me.TabPage2.Controls.Add(Me.Label40)
-        Me.TabPage2.Controls.Add(Me.Label41)
-        Me.TabPage2.Controls.Add(Me.Label42)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(882, 183)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Modificar Anime"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CodigoDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.Genero1DataGridViewTextBoxColumn, Me.Genero2DataGridViewTextBoxColumn, Me.Genero3DataGridViewTextBoxColumn, Me.CapitulosDataGridViewTextBoxColumn, Me.TemporadaDataGridViewTextBoxColumn, Me.DescripcionDataGridViewTextBoxColumn, Me.FechaLanzamientoDataGridViewTextBoxColumn, Me.SubtituladaDataGridViewTextBoxColumn, Me.DobladaDataGridViewTextBoxColumn, Me.RecomendadoDataGridViewTextBoxColumn, Me.EstadoDataGridViewTextBoxColumn, Me.StatSerieDataGridViewTextBoxColumn, Me.URLDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.AnimeVistoBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(5, 226)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(882, 255)
-        Me.DataGridView1.TabIndex = 2
-        '
-        'Btn_Cerrar
-        '
-        Me.Btn_Cerrar.Location = New System.Drawing.Point(804, 487)
-        Me.Btn_Cerrar.Name = "Btn_Cerrar"
-        Me.Btn_Cerrar.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_Cerrar.TabIndex = 3
-        Me.Btn_Cerrar.Text = "Cerrar"
-        Me.Btn_Cerrar.UseVisualStyleBackColor = True
-        '
-        'AnimeDataSet
-        '
-        Me.AnimeDataSet.DataSetName = "AnimeDataSet"
-        Me.AnimeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'AnimeVistoBindingSource
-        '
-        Me.AnimeVistoBindingSource.DataMember = "Anime_Visto"
-        Me.AnimeVistoBindingSource.DataSource = Me.AnimeDataSet
-        '
-        'Anime_VistoTableAdapter
-        '
-        Me.Anime_VistoTableAdapter.ClearBeforeFill = True
-        '
-        'CodigoDataGridViewTextBoxColumn
-        '
-        Me.CodigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo"
-        Me.CodigoDataGridViewTextBoxColumn.HeaderText = "Codigo"
-        Me.CodigoDataGridViewTextBoxColumn.Name = "CodigoDataGridViewTextBoxColumn"
-        Me.CodigoDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        '
-        'Genero1DataGridViewTextBoxColumn
-        '
-        Me.Genero1DataGridViewTextBoxColumn.DataPropertyName = "Genero_1"
-        Me.Genero1DataGridViewTextBoxColumn.HeaderText = "Genero_1"
-        Me.Genero1DataGridViewTextBoxColumn.Name = "Genero1DataGridViewTextBoxColumn"
-        '
-        'Genero2DataGridViewTextBoxColumn
-        '
-        Me.Genero2DataGridViewTextBoxColumn.DataPropertyName = "Genero_2"
-        Me.Genero2DataGridViewTextBoxColumn.HeaderText = "Genero_2"
-        Me.Genero2DataGridViewTextBoxColumn.Name = "Genero2DataGridViewTextBoxColumn"
-        '
-        'Genero3DataGridViewTextBoxColumn
-        '
-        Me.Genero3DataGridViewTextBoxColumn.DataPropertyName = "Genero_3"
-        Me.Genero3DataGridViewTextBoxColumn.HeaderText = "Genero_3"
-        Me.Genero3DataGridViewTextBoxColumn.Name = "Genero3DataGridViewTextBoxColumn"
-        '
-        'CapitulosDataGridViewTextBoxColumn
-        '
-        Me.CapitulosDataGridViewTextBoxColumn.DataPropertyName = "Capitulos"
-        Me.CapitulosDataGridViewTextBoxColumn.HeaderText = "Capitulos"
-        Me.CapitulosDataGridViewTextBoxColumn.Name = "CapitulosDataGridViewTextBoxColumn"
-        '
-        'TemporadaDataGridViewTextBoxColumn
-        '
-        Me.TemporadaDataGridViewTextBoxColumn.DataPropertyName = "Temporada"
-        Me.TemporadaDataGridViewTextBoxColumn.HeaderText = "Temporada"
-        Me.TemporadaDataGridViewTextBoxColumn.Name = "TemporadaDataGridViewTextBoxColumn"
-        '
-        'DescripcionDataGridViewTextBoxColumn
-        '
-        Me.DescripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion"
-        Me.DescripcionDataGridViewTextBoxColumn.Name = "DescripcionDataGridViewTextBoxColumn"
-        '
-        'FechaLanzamientoDataGridViewTextBoxColumn
-        '
-        Me.FechaLanzamientoDataGridViewTextBoxColumn.DataPropertyName = "Fecha_Lanzamiento"
-        Me.FechaLanzamientoDataGridViewTextBoxColumn.HeaderText = "Fecha_Lanzamiento"
-        Me.FechaLanzamientoDataGridViewTextBoxColumn.Name = "FechaLanzamientoDataGridViewTextBoxColumn"
-        '
-        'SubtituladaDataGridViewTextBoxColumn
-        '
-        Me.SubtituladaDataGridViewTextBoxColumn.DataPropertyName = "Subtitulada"
-        Me.SubtituladaDataGridViewTextBoxColumn.HeaderText = "Subtitulada"
-        Me.SubtituladaDataGridViewTextBoxColumn.Name = "SubtituladaDataGridViewTextBoxColumn"
-        '
-        'DobladaDataGridViewTextBoxColumn
-        '
-        Me.DobladaDataGridViewTextBoxColumn.DataPropertyName = "Doblada"
-        Me.DobladaDataGridViewTextBoxColumn.HeaderText = "Doblada"
-        Me.DobladaDataGridViewTextBoxColumn.Name = "DobladaDataGridViewTextBoxColumn"
-        '
-        'RecomendadoDataGridViewTextBoxColumn
-        '
-        Me.RecomendadoDataGridViewTextBoxColumn.DataPropertyName = "Recomendado"
-        Me.RecomendadoDataGridViewTextBoxColumn.HeaderText = "Recomendado"
-        Me.RecomendadoDataGridViewTextBoxColumn.Name = "RecomendadoDataGridViewTextBoxColumn"
-        '
-        'EstadoDataGridViewTextBoxColumn
-        '
-        Me.EstadoDataGridViewTextBoxColumn.DataPropertyName = "Estado"
-        Me.EstadoDataGridViewTextBoxColumn.HeaderText = "Estado"
-        Me.EstadoDataGridViewTextBoxColumn.Name = "EstadoDataGridViewTextBoxColumn"
-        '
-        'StatSerieDataGridViewTextBoxColumn
-        '
-        Me.StatSerieDataGridViewTextBoxColumn.DataPropertyName = "Stat_Serie"
-        Me.StatSerieDataGridViewTextBoxColumn.HeaderText = "Stat_Serie"
-        Me.StatSerieDataGridViewTextBoxColumn.Name = "StatSerieDataGridViewTextBoxColumn"
-        '
-        'URLDataGridViewTextBoxColumn
-        '
-        Me.URLDataGridViewTextBoxColumn.DataPropertyName = "URL"
-        Me.URLDataGridViewTextBoxColumn.HeaderText = "URL"
-        Me.URLDataGridViewTextBoxColumn.Name = "URLDataGridViewTextBoxColumn"
         '
         'PictureBox2
         '
@@ -810,302 +591,300 @@ Partial Class Form1
         Me.Label28.TabIndex = 36
         Me.Label28.Text = "Nombre"
         '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.PictureBox3)
+        Me.TabPage2.Controls.Add(Me.TextBox1)
+        Me.TabPage2.Controls.Add(Me.Label1)
+        Me.TabPage2.Controls.Add(Me.ComboBox3)
+        Me.TabPage2.Controls.Add(Me.Label4)
+        Me.TabPage2.Controls.Add(Me.ComboBox4)
+        Me.TabPage2.Controls.Add(Me.Label5)
+        Me.TabPage2.Controls.Add(Me.ComboBox7)
+        Me.TabPage2.Controls.Add(Me.ComboBox8)
+        Me.TabPage2.Controls.Add(Me.ComboBox10)
+        Me.TabPage2.Controls.Add(Me.ComboBox11)
+        Me.TabPage2.Controls.Add(Me.Button1)
+        Me.TabPage2.Controls.Add(Me.TextBox3)
+        Me.TabPage2.Controls.Add(Me.TextBox6)
+        Me.TabPage2.Controls.Add(Me.Label17)
+        Me.TabPage2.Controls.Add(Me.Label21)
+        Me.TabPage2.Controls.Add(Me.Label23)
+        Me.TabPage2.Controls.Add(Me.Label25)
+        Me.TabPage2.Controls.Add(Me.Label26)
+        Me.TabPage2.Controls.Add(Me.Label29)
+        Me.TabPage2.Controls.Add(Me.TextBox7)
+        Me.TabPage2.Controls.Add(Me.ComboBox12)
+        Me.TabPage2.Controls.Add(Me.TextBox8)
+        Me.TabPage2.Controls.Add(Me.Label30)
+        Me.TabPage2.Controls.Add(Me.Label31)
+        Me.TabPage2.Controls.Add(Me.Label32)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(882, 183)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Modificar Anime"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(720, 69)
+        Me.PictureBox3.Location = New System.Drawing.Point(719, 69)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 101)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 65
+        Me.PictureBox3.TabIndex = 61
         Me.PictureBox3.TabStop = False
         '
-        'TextBox6
+        'TextBox1
         '
-        Me.TextBox6.Location = New System.Drawing.Point(721, 39)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(99, 20)
-        Me.TextBox6.TabIndex = 64
+        Me.TextBox1.Location = New System.Drawing.Point(720, 39)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(99, 20)
+        Me.TextBox1.TabIndex = 60
         '
-        'Label29
+        'Label1
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(619, 42)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(82, 13)
-        Me.Label29.TabIndex = 63
-        Me.Label29.Text = "URL de Imagen"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(618, 42)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(82, 13)
+        Me.Label1.TabIndex = 59
+        Me.Label1.Text = "URL de Imagen"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"", "En Emision", "Concluido"})
+        Me.ComboBox3.Location = New System.Drawing.Point(720, 13)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox3.TabIndex = 58
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(618, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(93, 13)
+        Me.Label4.TabIndex = 57
+        Me.Label4.Text = "Estado de la Serie"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
+        Me.ComboBox4.Location = New System.Drawing.Point(108, 88)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(67, 21)
+        Me.ComboBox4.TabIndex = 56
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 94)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(61, 13)
+        Me.Label5.TabIndex = 55
+        Me.Label5.Text = "Temporada"
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Items.AddRange(New Object() {"", "Español", "Ingles", "Japones (Original)"})
+        Me.ComboBox7.Location = New System.Drawing.Point(460, 66)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(99, 21)
+        Me.ComboBox7.TabIndex = 54
+        '
+        'ComboBox8
+        '
+        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox8.FormattingEnabled = True
+        Me.ComboBox8.Items.AddRange(New Object() {"", "Español", "Ingles"})
+        Me.ComboBox8.Location = New System.Drawing.Point(460, 39)
+        Me.ComboBox8.Name = "ComboBox8"
+        Me.ComboBox8.Size = New System.Drawing.Size(99, 21)
+        Me.ComboBox8.TabIndex = 53
         '
         'ComboBox10
         '
         Me.ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Items.AddRange(New Object() {"", "En Emision", "Concluido"})
-        Me.ComboBox10.Location = New System.Drawing.Point(721, 13)
+        Me.ComboBox10.Items.AddRange(New Object() {"", "Si", "Quizas", "No del todo", "No"})
+        Me.ComboBox10.Location = New System.Drawing.Point(460, 93)
         Me.ComboBox10.Name = "ComboBox10"
         Me.ComboBox10.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox10.TabIndex = 62
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(619, 16)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(93, 13)
-        Me.Label30.TabIndex = 61
-        Me.Label30.Text = "Estado de la Serie"
+        Me.ComboBox10.TabIndex = 52
         '
         'ComboBox11
         '
         Me.ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Items.AddRange(New Object() {"", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"})
-        Me.ComboBox11.Location = New System.Drawing.Point(74, 146)
+        Me.ComboBox11.Items.AddRange(New Object() {"", "Visto", "No Visto", "Iniciado", "Casi terminado"})
+        Me.ComboBox11.Location = New System.Drawing.Point(460, 120)
         Me.ComboBox11.Name = "ComboBox11"
-        Me.ComboBox11.Size = New System.Drawing.Size(67, 21)
-        Me.ComboBox11.TabIndex = 60
+        Me.ComboBox11.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox11.TabIndex = 51
         '
-        'Label31
+        'Button1
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(7, 149)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(61, 13)
-        Me.Label31.TabIndex = 59
-        Me.Label31.Text = "Temporada"
+        Me.Button1.Location = New System.Drawing.Point(621, 144)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 37
+        Me.Button1.Text = "Añadir"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(460, 13)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(99, 20)
+        Me.TextBox3.TabIndex = 50
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(108, 119)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(198, 20)
+        Me.TextBox6.TabIndex = 49
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(350, 123)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(40, 13)
+        Me.Label17.TabIndex = 48
+        Me.Label17.Text = "Estado"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(350, 96)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(77, 13)
+        Me.Label21.TabIndex = 47
+        Me.Label21.Text = "Recomendado"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(350, 69)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(47, 13)
+        Me.Label23.TabIndex = 46
+        Me.Label23.Text = "Doblada"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(350, 42)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(60, 13)
+        Me.Label25.TabIndex = 45
+        Me.Label25.Text = "Subtitulada"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(350, 16)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(104, 13)
+        Me.Label26.TabIndex = 44
+        Me.Label26.Text = "Año de Lanzamiento"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(6, 122)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(63, 13)
+        Me.Label29.TabIndex = 43
+        Me.Label29.Text = "Descripcion"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(108, 62)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(67, 20)
+        Me.TextBox7.TabIndex = 42
         '
         'ComboBox12
         '
         Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"", "Español", "Ingles", "Japones (Original)"})
-        Me.ComboBox12.Location = New System.Drawing.Point(374, 92)
+        Me.ComboBox12.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
+        Me.ComboBox12.Location = New System.Drawing.Point(108, 36)
         Me.ComboBox12.Name = "ComboBox12"
-        Me.ComboBox12.Size = New System.Drawing.Size(99, 21)
-        Me.ComboBox12.TabIndex = 58
-        '
-        'ComboBox13
-        '
-        Me.ComboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox13.FormattingEnabled = True
-        Me.ComboBox13.Items.AddRange(New Object() {"", "Español", "Ingles"})
-        Me.ComboBox13.Location = New System.Drawing.Point(374, 65)
-        Me.ComboBox13.Name = "ComboBox13"
-        Me.ComboBox13.Size = New System.Drawing.Size(99, 21)
-        Me.ComboBox13.TabIndex = 57
-        '
-        'ComboBox14
-        '
-        Me.ComboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox14.FormattingEnabled = True
-        Me.ComboBox14.Items.AddRange(New Object() {"", "Si", "Quizas", "No del todo", "No"})
-        Me.ComboBox14.Location = New System.Drawing.Point(374, 119)
-        Me.ComboBox14.Name = "ComboBox14"
-        Me.ComboBox14.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox14.TabIndex = 56
-        '
-        'ComboBox15
-        '
-        Me.ComboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox15.FormattingEnabled = True
-        Me.ComboBox15.Items.AddRange(New Object() {"", "Visto", "No Visto", "Iniciado", "Casi terminado"})
-        Me.ComboBox15.Location = New System.Drawing.Point(374, 146)
-        Me.ComboBox15.Name = "ComboBox15"
-        Me.ComboBox15.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox15.TabIndex = 55
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(622, 144)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 37
-        Me.Button2.Text = "Añadir"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(374, 39)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(99, 20)
-        Me.TextBox7.TabIndex = 54
+        Me.ComboBox12.Size = New System.Drawing.Size(82, 21)
+        Me.ComboBox12.TabIndex = 41
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(374, 13)
+        Me.TextBox8.Location = New System.Drawing.Point(108, 10)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(198, 20)
-        Me.TextBox8.TabIndex = 53
+        Me.TextBox8.Size = New System.Drawing.Size(157, 20)
+        Me.TextBox8.TabIndex = 40
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(6, 68)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(50, 13)
+        Me.Label30.TabIndex = 39
+        Me.Label30.Text = "Capitulos"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(6, 42)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(42, 13)
+        Me.Label31.TabIndex = 38
+        Me.Label31.Text = "Genero"
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(272, 149)
+        Me.Label32.Location = New System.Drawing.Point(6, 16)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(40, 13)
-        Me.Label32.TabIndex = 52
-        Me.Label32.Text = "Estado"
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(272, 122)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(77, 13)
-        Me.Label33.TabIndex = 51
-        Me.Label33.Text = "Recomendado"
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(272, 95)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(47, 13)
-        Me.Label34.TabIndex = 50
-        Me.Label34.Text = "Doblada"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(272, 68)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(60, 13)
-        Me.Label35.TabIndex = 49
-        Me.Label35.Text = "Subtitulada"
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(272, 42)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(100, 13)
-        Me.Label36.TabIndex = 48
-        Me.Label36.Text = "Fecha Lanzamiento"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Location = New System.Drawing.Point(272, 16)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(63, 13)
-        Me.Label37.TabIndex = 47
-        Me.Label37.Text = "Descripcion"
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(74, 120)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(67, 20)
-        Me.TextBox9.TabIndex = 46
-        '
-        'ComboBox16
-        '
-        Me.ComboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox16.FormattingEnabled = True
-        Me.ComboBox16.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
-        Me.ComboBox16.Location = New System.Drawing.Point(74, 93)
-        Me.ComboBox16.Name = "ComboBox16"
-        Me.ComboBox16.Size = New System.Drawing.Size(82, 21)
-        Me.ComboBox16.TabIndex = 45
-        '
-        'ComboBox17
-        '
-        Me.ComboBox17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox17.FormattingEnabled = True
-        Me.ComboBox17.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
-        Me.ComboBox17.Location = New System.Drawing.Point(74, 66)
-        Me.ComboBox17.Name = "ComboBox17"
-        Me.ComboBox17.Size = New System.Drawing.Size(82, 21)
-        Me.ComboBox17.TabIndex = 44
-        '
-        'ComboBox18
-        '
-        Me.ComboBox18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox18.FormattingEnabled = True
-        Me.ComboBox18.Items.AddRange(New Object() {"", "Accion", "Lucha", "Aventura", "Carreras", "Ficcion", "Comedia", "Drama", "Demonios", "Deporte", "Ecchi", "Escolares", "Fantasia", "Gore", "Harem", "Horror", "Josei", "Magia", "Mecha", "Militar", "Misterio", "Parodia", "Psicologico", "Reencuentros", "Romance", "Seinen", "Shojo", "Shonen", "Space", "Suspenso", "Sobre Natural", "Supernatural", "Terror", "Vampiros", "Yuri", "Hentai"})
-        Me.ComboBox18.Location = New System.Drawing.Point(74, 39)
-        Me.ComboBox18.Name = "ComboBox18"
-        Me.ComboBox18.Size = New System.Drawing.Size(82, 21)
-        Me.ComboBox18.TabIndex = 43
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(74, 13)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(157, 20)
-        Me.TextBox10.TabIndex = 42
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(7, 123)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(50, 13)
-        Me.Label38.TabIndex = 41
-        Me.Label38.Text = "Capitulos"
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(7, 96)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(51, 13)
-        Me.Label39.TabIndex = 40
-        Me.Label39.Text = "Genero 3"
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(7, 69)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(51, 13)
-        Me.Label40.TabIndex = 39
-        Me.Label40.Text = "Genero 2"
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(7, 42)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(51, 13)
-        Me.Label41.TabIndex = 38
-        Me.Label41.Text = "Genero 1"
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(7, 16)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(44, 13)
-        Me.Label42.TabIndex = 36
-        Me.Label42.Text = "Nombre"
+        Me.Label32.Size = New System.Drawing.Size(44, 13)
+        Me.Label32.TabIndex = 36
+        Me.Label32.Text = "Nombre"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(891, 521)
+        Me.ClientSize = New System.Drawing.Size(885, 529)
         Me.Controls.Add(Me.Btn_Cerrar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AnimeDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AnimeVistoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents Btn_Cerrar As Button
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents PictureBox1 As PictureBox
@@ -1129,37 +908,12 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Txt_Capitulos As TextBox
-    Friend WithEvents Cbo_Gen3 As ComboBox
-    Friend WithEvents Cbo_Gen2 As ComboBox
-    Friend WithEvents Cbo_Gen1 As ComboBox
+    Friend WithEvents Cbo_Gen As ComboBox
     Friend WithEvents Txt_Nombre As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Btn_Cerrar As Button
-    Friend WithEvents AnimeDataSet As AnimeDataSet
-    Friend WithEvents AnimeVistoBindingSource As BindingSource
-    Friend WithEvents Anime_VistoTableAdapter As AnimeDataSetTableAdapters.Anime_VistoTableAdapter
-    Friend WithEvents CodigoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Genero1DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Genero2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents Genero3DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents CapitulosDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TemporadaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DescripcionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents FechaLanzamientoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SubtituladaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DobladaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents RecomendadoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents EstadoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents StatSerieDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents URLDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label13 As Label
@@ -1178,34 +932,31 @@ Partial Class Form1
     Friend WithEvents Label24 As Label
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
+    Friend WithEvents TabPage2 As TabPage
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label29 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents ComboBox8 As ComboBox
     Friend WithEvents ComboBox10 As ComboBox
-    Friend WithEvents Label30 As Label
     Friend WithEvents ComboBox11 As ComboBox
-    Friend WithEvents Label31 As Label
-    Friend WithEvents ComboBox12 As ComboBox
-    Friend WithEvents ComboBox13 As ComboBox
-    Friend WithEvents ComboBox14 As ComboBox
-    Friend WithEvents ComboBox15 As ComboBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label29 As Label
     Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents ComboBox12 As ComboBox
     Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label31 As Label
     Friend WithEvents Label32 As Label
-    Friend WithEvents Label33 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents ComboBox16 As ComboBox
-    Friend WithEvents ComboBox17 As ComboBox
-    Friend WithEvents ComboBox18 As ComboBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label38 As Label
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Label40 As Label
-    Friend WithEvents Label41 As Label
-    Friend WithEvents Label42 As Label
 End Class
