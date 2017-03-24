@@ -94,12 +94,27 @@
     Public UrgSElfSkill As Integer
     Public UrgSElfStat As Double
 
-    'MagElfSkill =
-    'MagElfStat  =
+    'MagElfSkill = MagMElfSkill + MedElfSkill + EnchElfSkill + FireMElfSkill + IceMElfSkill + LightMElfSkill
+    'MagElfStat  = MagMElfStat + MedElfStat + EnchElfStat + FireMElfStat + IceMElfStat + LightMElfStat
     '------>>>>>>>Magic category<<<<<<<------'
     Public MagElfSkill As Integer
     Public MagElfStat As Double
-    'Range Attack'
+    'Magic Mastery'
     Public MagMElfSkill As Integer
     Public MagMElfStat As Double
+    'Meditation'
+    Public MedElfSkill As Integer
+    Public MedElfStat As Double
+    'Enchant'
+    Public EnchElfSkill As Integer
+    Public EnchElfStat As Double
+    'Fire Mastery'
+    Public FireMElfSkill As Integer
+    Public FireMElfStat As Double
+    'Ice Mastery'
+    Public IceMElfSkill As Integer
+    Public IceMElfStat As Double
+    'Lightning Mastery'
+    Public LightMElfSkill As Integer
+    Public LightMElfStat As Double
 End Module
