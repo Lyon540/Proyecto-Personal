@@ -94,8 +94,8 @@
     Public UrgSElfSkill As Integer
     Public UrgSElfStat As Double
 
-    'MagElfSkill = MagMElfSkill + MedElfSkill + EnchElfSkill + FireMElfSkill + IceMElfSkill + LightMElfSkill
-    'MagElfStat  = MagMElfStat + MedElfStat + EnchElfStat + FireMElfStat + IceMElfStat + LightMElfStat
+    'MagElfSkill = MagMElfSkill + MedElfSkill + EnchElfSkill + FireMElfSkill + IceMElfSkill + LightMElfSkill + BolMElfSkill + FusBElfSkill
+    'MagElfStat  = MagMElfStat + MedElfStat + EnchElfStat + FireMElfStat + IceMElfStat + LightMElfStat + BolMElfStat + FusBElfStat
     '------>>>>>>>Magic category<<<<<<<------'
     Public MagElfSkill As Integer
     Public MagElfStat As Double
@@ -117,4 +117,10 @@
     'Lightning Mastery'
     Public LightMElfSkill As Integer
     Public LightMElfStat As Double
+    'Bolt Mastery'
+    Public BolMElfSkill As Integer
+    Public BolMElfStat As Double
+    'Fusion Bolt'
+    Public FusBElfSkill As Integer
+    Public FusBElfStat As Double
 End Module

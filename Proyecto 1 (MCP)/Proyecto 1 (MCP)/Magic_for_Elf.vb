@@ -497,4 +497,182 @@
                 End If
         End Select
     End Sub
+
+    Private Sub Btn_Confirm_BolMElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_BolMElf.Click
+        BolMElfSkill = 0
+        BolMElfStat = 0
+        Select Case Cbo_BolMElf.SelectedIndex
+        'Beggin with the Bolt Mastery Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 0
+                    BolMElfStat = BolMElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 15
+                    BolMElfStat = BolMElfStat + 0.5
+                End If
+            Case 2
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 20
+                    BolMElfStat = BolMElfStat + 1.0
+                End If
+            Case 3
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 25
+                    BolMElfStat = BolMElfStat + 1.5
+                End If
+            Case 4
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 30
+                    BolMElfStat = BolMElfStat + 2.0
+                End If
+            Case 5
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 35
+                    BolMElfStat = BolMElfStat + 2.5
+                End If
+            Case 6
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 40
+                    BolMElfStat = BolMElfStat + 3.5
+                End If
+            Case 7
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 45
+                    BolMElfStat = BolMElfStat + 4.0
+                End If
+            Case 8
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 50
+                    BolMElfStat = BolMElfStat + 4.5
+                End If
+            Case 9
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 55
+                    BolMElfStat = BolMElfStat + 5.0
+                End If
+            Case 10
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 60
+                    BolMElfStat = BolMElfStat + 5.5
+                End If
+            Case 11
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 80
+                    BolMElfStat = BolMElfStat + 6.5
+                End If
+            Case 12
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 100
+                    BolMElfStat = BolMElfStat + 7.5
+                End If
+            Case 13
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 120
+                    BolMElfStat = BolMElfStat + 8.5
+                End If
+            Case 14
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 140
+                    BolMElfStat = BolMElfStat + 9.5
+                End If
+            Case 15
+                If Btn_Confirm_BolMElf.Created Then
+                    BolMElfSkill = BolMElfSkill + 160
+                    BolMElfStat = BolMElfStat + 10.5
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_FusBElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_FusBElf.Click
+        FusBElfSkill = 0
+        FusBElfStat = 0
+        Select Case Cbo_FusBElf.SelectedIndex
+        'Beggin with the Fusion Bolt Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 0
+                    FusBElfStat = FusBElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 30
+                    FusBElfStat = FusBElfStat + 0
+                End If
+            Case 2
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 40
+                    FusBElfStat = FusBElfStat + 0
+                End If
+            Case 3
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 50
+                    FusBElfStat = FusBElfStat + 0
+                End If
+            Case 4
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 60
+                    FusBElfStat = FusBElfStat + 0.2
+                End If
+            Case 5
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 70
+                    FusBElfStat = FusBElfStat + 0.4
+                End If
+            Case 6
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 80
+                    FusBElfStat = FusBElfStat + 0.6
+                End If
+            Case 7
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 100
+                    FusBElfStat = FusBElfStat + 1
+                End If
+            Case 8
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 115
+                    FusBElfStat = FusBElfStat + 1.4
+                End If
+            Case 9
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 130
+                    FusBElfStat = FusBElfStat + 1.8
+                End If
+            Case 10
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 145
+                    FusBElfStat = FusBElfStat + 2.2
+                End If
+            Case 11
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 180
+                    FusBElfStat = FusBElfStat + 2.8
+                End If
+            Case 12
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 195
+                    FusBElfStat = FusBElfStat + 3.4
+                End If
+            Case 13
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 210
+                    FusBElfStat = FusBElfStat + 4.0
+                End If
+            Case 14
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 225
+                    FusBElfStat = FusBElfStat + 4.8
+                End If
+            Case 15
+                If Btn_Confirm_FusBElf.Created Then
+                    FusBElfSkill = FusBElfSkill + 250
+                    FusBElfStat = FusBElfStat + 5.8
+                End If
+        End Select
+    End Sub
 End Class

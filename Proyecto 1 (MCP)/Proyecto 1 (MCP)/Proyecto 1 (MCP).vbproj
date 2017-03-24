@@ -311,6 +311,21 @@
   <ItemGroup>
     <None Include="Resources\Lightning_Mastery.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bolt_Mastery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fusion_Bolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firebolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icebolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightning_Bolt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
