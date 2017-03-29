@@ -94,8 +94,8 @@
     Public UrgSElfSkill As Integer
     Public UrgSElfStat As Double
 
-    'MagElfSkill = MagMElfSkill + MedElfSkill + EnchElfSkill + FireMElfSkill + IceMElfSkill + LightMElfSkill + BolMElfSkill + FusBElfSkill
-    'MagElfStat  = MagMElfStat + MedElfStat + EnchElfStat + FireMElfStat + IceMElfStat + LightMElfStat + BolMElfStat + FusBElfStat
+    'MagElfSkill = MagMElfSkill + MedElfSkill + EnchElfSkill + FireMElfSkill + IceMElfSkill + LightMElfSkill + BolMElfSkill + FusBElfSkill+ FirBElfSkill + IceBElfSkill + LightBElfSkill
+    'MagElfStat  = MagMElfStat + MedElfStat + EnchElfStat + FireMElfStat + IceMElfStat + LightMElfStat + BolMElfStat + FusBElfStat + FIrBElfStat + IceBElfStat + LightBElfStat
     '------>>>>>>>Magic category<<<<<<<------'
     Public MagElfSkill As Integer
     Public MagElfStat As Double
@@ -123,4 +123,22 @@
     'Fusion Bolt'
     Public FusBElfSkill As Integer
     Public FusBElfStat As Double
+    'Fire Bolt'
+    Public FirBElfSkill As Integer
+    Public FIrBElfStat As Double
+    'Ice Bolt'
+    Public IceBElfSkill As Integer
+    Public IceBElfStat As Double
+    'Lightning Bolt'
+    Public LightBElfSkill As Integer
+    Public LightBElfStat As Double
+    'Fire Ball'
+    Public FireBaElfSkill As Integer
+    Public FIreBaElfStat As Double
+    'Ice Spear'
+    Public IceSpElfSkill As Integer
+    Public IceSpElfStat As Double
+    'Thunder'
+    Public ThunElfSkill As Integer
+    Public ThunElfStat As Double
 End Module

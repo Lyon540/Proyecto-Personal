@@ -243,6 +243,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Fireball() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Fireball", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Firebolt() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Firebolt", resourceCulture)
@@ -463,6 +473,16 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Ice_Spear() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Ice_Spear", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Icebolt() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Icebolt", resourceCulture)
@@ -606,6 +626,16 @@ Namespace My.Resources
         Friend ReadOnly Property Sword_Mastery() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Sword_Mastery", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Thunder() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Thunder", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

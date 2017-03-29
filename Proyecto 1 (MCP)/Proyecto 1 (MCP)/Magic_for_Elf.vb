@@ -675,4 +675,538 @@
                 End If
         End Select
     End Sub
+
+    Private Sub Btn_Confirm_FirBElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_FirBElf.Click
+        FirBElfSkill = 0
+        FirBElfStat = 0
+        Select Case Cbo_FirBElf.SelectedIndex
+        'Beggin with the Fire Bolt Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 0
+                    FIrBElfStat = FIrBElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 0
+                    FIrBElfStat = FIrBElfStat + 0.2
+                End If
+            Case 2
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 10
+                    FIrBElfStat = FIrBElfStat + 0.6
+                End If
+            Case 3
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 30
+                    FIrBElfStat = FIrBElfStat + 1
+                End If
+            Case 4
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 60
+                    FIrBElfStat = FIrBElfStat + 1.4
+                End If
+            Case 5
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 120
+                    FIrBElfStat = FIrBElfStat + 2
+                End If
+            Case 6
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 180
+                    FIrBElfStat = FIrBElfStat + 2.6
+                End If
+            Case 7
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 220
+                    FIrBElfStat = FIrBElfStat + 3.2
+                End If
+            Case 8
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 230
+                    FIrBElfStat = FIrBElfStat + 4
+                End If
+            Case 9
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 240
+                    FIrBElfStat = FIrBElfStat + 4.8
+                End If
+            Case 10
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 250
+                    FIrBElfStat = FIrBElfStat + 5.6
+                End If
+            Case 11
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 260
+                    FIrBElfStat = FIrBElfStat + 6.4
+                End If
+            Case 12
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 270
+                    FIrBElfStat = FIrBElfStat + 7.4
+                End If
+            Case 13
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 280
+                    FIrBElfStat = FIrBElfStat + 8.4
+                End If
+            Case 14
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 290
+                    FIrBElfStat = FIrBElfStat + 9.4
+                End If
+            Case 0
+                If Btn_Confirm_FirBElf.Created Then
+                    FirBElfSkill = FirBElfSkill + 300
+                    FIrBElfStat = FIrBElfStat + 10.4
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_IceBElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_IceBElf.Click
+        IceBElfSkill = 0
+        IceBElfStat = 0
+        Select Case Cbo_IceBElf.SelectedIndex
+        'Beggin with the Ice Bolt Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 0
+                    IceBElfStat = IceBElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 0
+                    IceBElfStat = IceBElfStat + 0.2
+                End If
+            Case 2
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 10
+                    IceBElfStat = IceBElfStat + 0.6
+                End If
+            Case 3
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 20
+                    IceBElfStat = IceBElfStat + 1
+                End If
+            Case 4
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 40
+                    IceBElfStat = IceBElfStat + 1.4
+                End If
+            Case 5
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 50
+                    IceBElfStat = IceBElfStat + 2
+                End If
+            Case 6
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 60
+                    IceBElfStat = IceBElfStat + 2.6
+                End If
+            Case 7
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 70
+                    IceBElfStat = IceBElfStat + 3.2
+                End If
+            Case 8
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 80
+                    IceBElfStat = IceBElfStat + 4
+                End If
+            Case 9
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 90
+                    IceBElfStat = IceBElfStat + 4.8
+                End If
+            Case 10
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 100
+                    IceBElfStat = IceBElfStat + 5.6
+                End If
+            Case 11
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 110
+                    IceBElfStat = IceBElfStat + 6.4
+                End If
+            Case 12
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 120
+                    IceBElfStat = IceBElfStat + 7.4
+                End If
+            Case 13
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 130
+                    IceBElfStat = IceBElfStat + 8.4
+                End If
+            Case 14
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 140
+                    IceBElfStat = IceBElfStat + 9.4
+                End If
+            Case 15
+                If Btn_Confirm_IceBElf.Created Then
+                    IceBElfSkill = IceBElfSkill + 150
+                    IceBElfStat = IceBElfStat + 10.4
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_LightBElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_LightBElf.Click
+        LightBElfSkill = 0
+        LightBElfStat = 0
+        Select Case Cbo_LightBElf.SelectedIndex
+        'Beggin with the Lightning Bolt Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 0
+                    LightBElfStat = LightBElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 20
+                    LightBElfStat = LightBElfStat + 0.2
+                End If
+            Case 2
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 30
+                    LightBElfStat = LightBElfStat + 0.6
+                End If
+            Case 3
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 40
+                    LightBElfStat = LightBElfStat + 1
+                End If
+            Case 4
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 50
+                    LightBElfStat = LightBElfStat + 1.4
+                End If
+            Case 5
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 70
+                    LightBElfStat = LightBElfStat + 2
+                End If
+            Case 6
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 90
+                    LightBElfStat = LightBElfStat + 2.6
+                End If
+            Case 7
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 110
+                    LightBElfStat = LightBElfStat + 3.2
+                End If
+            Case 8
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 120
+                    LightBElfStat = LightBElfStat + 4.0
+                End If
+            Case 9
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 150
+                    LightBElfStat = LightBElfStat + 4.8
+                End If
+            Case 10
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 170
+                    LightBElfStat = LightBElfStat + 5.6
+                End If
+            Case 11
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 200
+                    LightBElfStat = LightBElfStat + 6.4
+                End If
+            Case 12
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 230
+                    LightBElfStat = LightBElfStat + 7.4
+                End If
+            Case 13
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 260
+                    LightBElfStat = LightBElfStat + 8.4
+                End If
+            Case 14
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 290
+                    LightBElfStat = LightBElfStat + 9.4
+                End If
+            Case 15
+                If Btn_Confirm_LightBElf.Created Then
+                    LightBElfSkill = LightBElfSkill + 320
+                    LightBElfStat = LightBElfStat + 10.4
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_FireBaElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_FireBaElf.Click
+        FireBaElfSkill = 0
+        FIreBaElfStat = 0
+        Select Case Cbo_FireBaElf.SelectedIndex
+        'Beggin with the Fire Ball Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 100
+                    FIreBaElfStat = FIreBaElfStat + 0
+                End If
+            Case 1
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 120
+                    FIreBaElfStat = FIreBaElfStat + 0.6
+                End If
+            Case 2
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 140
+                    FIreBaElfStat = FIreBaElfStat + 1.2
+                End If
+            Case 3
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 160
+                    FIreBaElfStat = FIreBaElfStat + 1.8
+                End If
+            Case 4
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 180
+                    FIreBaElfStat = FIreBaElfStat + 2.4
+                End If
+            Case 5
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 200
+                    FIreBaElfStat = FIreBaElfStat + 3.2
+                End If
+            Case 6
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 220
+                    FIreBaElfStat = FIreBaElfStat + 4.0
+                End If
+            Case 7
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 240
+                    FIreBaElfStat = FIreBaElfStat + 4.8
+                End If
+            Case 8
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 260
+                    FIreBaElfStat = FIreBaElfStat + 5.8
+                End If
+            Case 9
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 280
+                    FIreBaElfStat = FIreBaElfStat + 6.8
+                End If
+            Case 10
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 300
+                    FIreBaElfStat = FIreBaElfStat + 7.8
+                End If
+            Case 11
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 330
+                    FIreBaElfStat = FIreBaElfStat + 8.8
+                End If
+            Case 12
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 360
+                    FIreBaElfStat = FIreBaElfStat + 11.8
+                End If
+            Case 13
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 400
+                    FIreBaElfStat = FIreBaElfStat + 14.8
+                End If
+            Case 14
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 450
+                    FIreBaElfStat = FIreBaElfStat + 17.8
+                End If
+            Case 15
+                If Btn_Confirm_FireBaElf.Created Then
+                    FireBaElfSkill = FireBaElfSkill + 500
+                    FIreBaElfStat = FIreBaElfStat + 20.8
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_IceSpElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_IceSpElf.Click
+        IceSpElfSkill = 0
+        IceSpElfStat = 0
+        Select Case Cbo_IceSpElf.SelectedIndex
+        'Beggin with the Ice Spear Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 0
+                    IceSpElfStat = IceSpElfStat = 0
+                End If
+            Case 1
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 10
+                    IceSpElfStat = IceSpElfStat = 0.2
+                End If
+            Case 2
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 20
+                    IceSpElfStat = IceSpElfStat = 0.4
+                End If
+            Case 3
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 30
+                    IceSpElfStat = IceSpElfStat = 0.6
+                End If
+            Case 4
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 40
+                    IceSpElfStat = IceSpElfStat = 0.8
+                End If
+            Case 5
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 50
+                    IceSpElfStat = IceSpElfStat = 1
+                End If
+            Case 6
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 60
+                    IceSpElfStat = IceSpElfStat = 1.2
+                End If
+            Case 7
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 70
+                    IceSpElfStat = IceSpElfStat = 1.6
+                End If
+            Case 8
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 80
+                    IceSpElfStat = IceSpElfStat = 2
+                End If
+            Case 9
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 90
+                    IceSpElfStat = IceSpElfStat = 2.4
+                End If
+            Case 10
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 100
+                    IceSpElfStat = IceSpElfStat = 2.8
+                End If
+            Case 11
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 110
+                    IceSpElfStat = IceSpElfStat = 5.9
+                End If
+            Case 12
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 120
+                    IceSpElfStat = IceSpElfStat = 9.0
+                End If
+            Case 13
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 130
+                    IceSpElfStat = IceSpElfStat = 12.1
+                End If
+            Case 14
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 140
+                    IceSpElfStat = IceSpElfStat = 15.2
+                End If
+            Case 15
+                If Btn_Confirm_IceSpElf.Created Then
+                    IceSpElfSkill = IceSpElfSkill = 150
+                    IceSpElfStat = IceSpElfStat = 18.3
+                End If
+        End Select
+    End Sub
+
+    Private Sub Btn_Confirm_ThunElf_Click(sender As Object, e As EventArgs) Handles Btn_Confirm_ThunElf.Click
+        ThunElfSkill = 0
+        ThunElfStat = 0
+        Select Case Cbo_ThunElf.SelectedIndex
+        'Beggin with the thunder Skill for Elf'
+        'Skill & Stat No Changes with races (Human/Elf/Giant is the same)'
+            Case 0
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 50
+                    ThunElfStat = ThunElfStat = 0
+                End If
+            Case 1
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 80
+                    ThunElfStat = ThunElfStat = 3
+                End If
+            Case 2
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 110
+                    ThunElfStat = ThunElfStat = 6
+                End If
+            Case 3
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 140
+                    ThunElfStat = ThunElfStat = 9
+                End If
+            Case 4
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 170
+                    ThunElfStat = ThunElfStat = 12.5
+                End If
+            Case 5
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 200
+                    ThunElfStat = ThunElfStat = 16
+                End If
+            Case 6
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 230
+                    ThunElfStat = ThunElfStat = 20
+                End If
+            Case 7
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 260
+                    ThunElfStat = ThunElfStat = 24.5
+                End If
+            Case 8
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 290
+                    ThunElfStat = ThunElfStat = 29
+                End If
+            Case 9
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 320
+                    ThunElfStat = ThunElfStat = 34
+                End If
+            Case 10
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 350
+                    ThunElfStat = ThunElfStat = 40.5
+                End If
+            Case 11
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 380
+                    ThunElfStat = ThunElfStat = 44.5
+                End If
+            Case 12
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 420
+                    ThunElfStat = ThunElfStat = 49.5
+                End If
+            Case 13
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 460
+                    ThunElfStat = ThunElfStat = 52.5
+                End If
+            Case 14
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 500
+                    ThunElfStat = ThunElfStat = 56.5
+                End If
+            Case 15
+                If Btn_Confirm_ThunElf.Created Then
+                    ThunElfSkill = ThunElfSkill = 550
+                    ThunElfStat = ThunElfStat = 60.5
+                End If
+        End Select
+    End Sub
 End Class

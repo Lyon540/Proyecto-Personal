@@ -25,10 +25,10 @@ Partial Class Magic_for_Elf
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Btn_ReturnElfSkills = New System.Windows.Forms.Button()
-        Me.Btn_Confirm_UrgSElf = New System.Windows.Forms.Button()
-        Me.Cbo_UrgSElf = New System.Windows.Forms.ComboBox()
-        Me.Btn_Confirm_SpiSElf = New System.Windows.Forms.Button()
-        Me.Cbo_SpiSElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_IceBElf = New System.Windows.Forms.Button()
+        Me.Cbo_IceBElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_FirBElf = New System.Windows.Forms.Button()
+        Me.Cbo_FirBElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_FusBElf = New System.Windows.Forms.Button()
         Me.Cbo_FusBElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_BolMElf = New System.Windows.Forms.Button()
@@ -45,14 +45,14 @@ Partial Class Magic_for_Elf
         Me.Cbo_MedElf = New System.Windows.Forms.ComboBox()
         Me.Btn_Confirm_MagMElf = New System.Windows.Forms.Button()
         Me.Cbo_MagMElf = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_LightBElf = New System.Windows.Forms.Button()
+        Me.Cbo_LightBElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_ThunElf = New System.Windows.Forms.Button()
+        Me.Cbo_ThunElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_IceSpElf = New System.Windows.Forms.Button()
+        Me.Cbo_IceSpElf = New System.Windows.Forms.ComboBox()
+        Me.Btn_Confirm_FireBaElf = New System.Windows.Forms.Button()
+        Me.Cbo_FireBaElf = New System.Windows.Forms.ComboBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
@@ -110,45 +110,45 @@ Partial Class Magic_for_Elf
         Me.Btn_ReturnElfSkills.Text = "Return"
         Me.Btn_ReturnElfSkills.UseVisualStyleBackColor = True
         '
-        'Btn_Confirm_UrgSElf
+        'Btn_Confirm_IceBElf
         '
-        Me.Btn_Confirm_UrgSElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Confirm_UrgSElf.Location = New System.Drawing.Point(429, 148)
-        Me.Btn_Confirm_UrgSElf.Name = "Btn_Confirm_UrgSElf"
-        Me.Btn_Confirm_UrgSElf.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_Confirm_UrgSElf.TabIndex = 131
-        Me.Btn_Confirm_UrgSElf.Text = "Confirm"
-        Me.Btn_Confirm_UrgSElf.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_IceBElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_IceBElf.Location = New System.Drawing.Point(429, 148)
+        Me.Btn_Confirm_IceBElf.Name = "Btn_Confirm_IceBElf"
+        Me.Btn_Confirm_IceBElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_IceBElf.TabIndex = 131
+        Me.Btn_Confirm_IceBElf.Text = "Confirm"
+        Me.Btn_Confirm_IceBElf.UseVisualStyleBackColor = True
         '
-        'Cbo_UrgSElf
+        'Cbo_IceBElf
         '
-        Me.Cbo_UrgSElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Cbo_UrgSElf.FormattingEnabled = True
-        Me.Cbo_UrgSElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.Cbo_UrgSElf.Location = New System.Drawing.Point(342, 150)
-        Me.Cbo_UrgSElf.Name = "Cbo_UrgSElf"
-        Me.Cbo_UrgSElf.Size = New System.Drawing.Size(66, 21)
-        Me.Cbo_UrgSElf.TabIndex = 130
+        Me.Cbo_IceBElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_IceBElf.FormattingEnabled = True
+        Me.Cbo_IceBElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_IceBElf.Location = New System.Drawing.Point(342, 150)
+        Me.Cbo_IceBElf.Name = "Cbo_IceBElf"
+        Me.Cbo_IceBElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_IceBElf.TabIndex = 130
         '
-        'Btn_Confirm_SpiSElf
+        'Btn_Confirm_FirBElf
         '
-        Me.Btn_Confirm_SpiSElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_Confirm_SpiSElf.Location = New System.Drawing.Point(429, 89)
-        Me.Btn_Confirm_SpiSElf.Name = "Btn_Confirm_SpiSElf"
-        Me.Btn_Confirm_SpiSElf.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_Confirm_SpiSElf.TabIndex = 128
-        Me.Btn_Confirm_SpiSElf.Text = "Confirm"
-        Me.Btn_Confirm_SpiSElf.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_FirBElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_FirBElf.Location = New System.Drawing.Point(429, 89)
+        Me.Btn_Confirm_FirBElf.Name = "Btn_Confirm_FirBElf"
+        Me.Btn_Confirm_FirBElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_FirBElf.TabIndex = 128
+        Me.Btn_Confirm_FirBElf.Text = "Confirm"
+        Me.Btn_Confirm_FirBElf.UseVisualStyleBackColor = True
         '
-        'Cbo_SpiSElf
+        'Cbo_FirBElf
         '
-        Me.Cbo_SpiSElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Cbo_SpiSElf.FormattingEnabled = True
-        Me.Cbo_SpiSElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.Cbo_SpiSElf.Location = New System.Drawing.Point(342, 91)
-        Me.Cbo_SpiSElf.Name = "Cbo_SpiSElf"
-        Me.Cbo_SpiSElf.Size = New System.Drawing.Size(66, 21)
-        Me.Cbo_SpiSElf.TabIndex = 127
+        Me.Cbo_FirBElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_FirBElf.FormattingEnabled = True
+        Me.Cbo_FirBElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_FirBElf.Location = New System.Drawing.Point(342, 91)
+        Me.Cbo_FirBElf.Name = "Cbo_FirBElf"
+        Me.Cbo_FirBElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_FirBElf.TabIndex = 127
         '
         'Btn_Confirm_FusBElf
         '
@@ -310,89 +310,89 @@ Partial Class Magic_for_Elf
         Me.Cbo_MagMElf.Size = New System.Drawing.Size(66, 21)
         Me.Cbo_MagMElf.TabIndex = 103
         '
-        'Button1
+        'Btn_Confirm_LightBElf
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(429, 396)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 146
-        Me.Button1.Text = "Confirm"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_LightBElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_LightBElf.Location = New System.Drawing.Point(429, 208)
+        Me.Btn_Confirm_LightBElf.Name = "Btn_Confirm_LightBElf"
+        Me.Btn_Confirm_LightBElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_LightBElf.TabIndex = 137
+        Me.Btn_Confirm_LightBElf.Text = "Confirm"
+        Me.Btn_Confirm_LightBElf.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'Cbo_LightBElf
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.ComboBox1.Location = New System.Drawing.Point(342, 398)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(66, 21)
-        Me.ComboBox1.TabIndex = 145
+        Me.Cbo_LightBElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_LightBElf.FormattingEnabled = True
+        Me.Cbo_LightBElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_LightBElf.Location = New System.Drawing.Point(342, 210)
+        Me.Cbo_LightBElf.Name = "Cbo_LightBElf"
+        Me.Cbo_LightBElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_LightBElf.TabIndex = 136
         '
-        'Button2
+        'Btn_Confirm_ThunElf
         '
-        Me.Button2.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(429, 333)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 143
-        Me.Button2.Text = "Confirm"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_ThunElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_ThunElf.Location = New System.Drawing.Point(429, 396)
+        Me.Btn_Confirm_ThunElf.Name = "Btn_Confirm_ThunElf"
+        Me.Btn_Confirm_ThunElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_ThunElf.TabIndex = 146
+        Me.Btn_Confirm_ThunElf.Text = "Confirm"
+        Me.Btn_Confirm_ThunElf.UseVisualStyleBackColor = True
         '
-        'ComboBox2
+        'Cbo_ThunElf
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.ComboBox2.Location = New System.Drawing.Point(342, 335)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(66, 21)
-        Me.ComboBox2.TabIndex = 142
+        Me.Cbo_ThunElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_ThunElf.FormattingEnabled = True
+        Me.Cbo_ThunElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_ThunElf.Location = New System.Drawing.Point(342, 398)
+        Me.Cbo_ThunElf.Name = "Cbo_ThunElf"
+        Me.Cbo_ThunElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_ThunElf.TabIndex = 145
         '
-        'Button3
+        'Btn_Confirm_IceSpElf
         '
-        Me.Button3.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(429, 269)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 140
-        Me.Button3.Text = "Confirm"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_IceSpElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_IceSpElf.Location = New System.Drawing.Point(429, 333)
+        Me.Btn_Confirm_IceSpElf.Name = "Btn_Confirm_IceSpElf"
+        Me.Btn_Confirm_IceSpElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_IceSpElf.TabIndex = 143
+        Me.Btn_Confirm_IceSpElf.Text = "Confirm"
+        Me.Btn_Confirm_IceSpElf.UseVisualStyleBackColor = True
         '
-        'ComboBox3
+        'Cbo_IceSpElf
         '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.ComboBox3.Location = New System.Drawing.Point(342, 271)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(66, 21)
-        Me.ComboBox3.TabIndex = 139
+        Me.Cbo_IceSpElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_IceSpElf.FormattingEnabled = True
+        Me.Cbo_IceSpElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_IceSpElf.Location = New System.Drawing.Point(342, 335)
+        Me.Cbo_IceSpElf.Name = "Cbo_IceSpElf"
+        Me.Cbo_IceSpElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_IceSpElf.TabIndex = 142
         '
-        'Button4
+        'Btn_Confirm_FireBaElf
         '
-        Me.Button4.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(429, 208)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 137
-        Me.Button4.Text = "Confirm"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Btn_Confirm_FireBaElf.Font = New System.Drawing.Font("Arial Unicode MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Confirm_FireBaElf.Location = New System.Drawing.Point(429, 269)
+        Me.Btn_Confirm_FireBaElf.Name = "Btn_Confirm_FireBaElf"
+        Me.Btn_Confirm_FireBaElf.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_Confirm_FireBaElf.TabIndex = 140
+        Me.Btn_Confirm_FireBaElf.Text = "Confirm"
+        Me.Btn_Confirm_FireBaElf.UseVisualStyleBackColor = True
         '
-        'ComboBox4
+        'Cbo_FireBaElf
         '
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
-        Me.ComboBox4.Location = New System.Drawing.Point(342, 210)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(66, 21)
-        Me.ComboBox4.TabIndex = 136
+        Me.Cbo_FireBaElf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Cbo_FireBaElf.FormattingEnabled = True
+        Me.Cbo_FireBaElf.Items.AddRange(New Object() {"Novice", "Rank F", "Rank E", "Rank D", "Rank C", "Rank B", "Rank A", "Rank 9", "Rank 8", "Rank 7", "Rank 6", "Rank 5", "Rank 4", "Rank 3", "Rank 2", "Rank 1"})
+        Me.Cbo_FireBaElf.Location = New System.Drawing.Point(342, 271)
+        Me.Cbo_FireBaElf.Name = "Cbo_FireBaElf"
+        Me.Cbo_FireBaElf.Size = New System.Drawing.Size(66, 21)
+        Me.Cbo_FireBaElf.TabIndex = 139
         '
         'PictureBox8
         '
-        Me.PictureBox8.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Final_Shot
+        Me.PictureBox8.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Thunder
         Me.PictureBox8.Location = New System.Drawing.Point(292, 378)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(44, 41)
@@ -401,7 +401,7 @@ Partial Class Magic_for_Elf
         '
         'PictureBox9
         '
-        Me.PictureBox9.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Lightning_Mastery
+        Me.PictureBox9.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Ice_Spear
         Me.PictureBox9.Location = New System.Drawing.Point(292, 315)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(44, 41)
@@ -410,7 +410,7 @@ Partial Class Magic_for_Elf
         '
         'PictureBox10
         '
-        Me.PictureBox10.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Ice_Mastery
+        Me.PictureBox10.Image = Global.Proyecto_1__MCP_.My.Resources.Resources.Fireball
         Me.PictureBox10.Location = New System.Drawing.Point(292, 251)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(44, 41)
@@ -521,26 +521,26 @@ Partial Class Magic_for_Elf
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(883, 482)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Btn_Confirm_ThunElf)
+        Me.Controls.Add(Me.Cbo_ThunElf)
         Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Btn_Confirm_IceSpElf)
+        Me.Controls.Add(Me.Cbo_IceSpElf)
         Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Btn_Confirm_FireBaElf)
+        Me.Controls.Add(Me.Cbo_FireBaElf)
         Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.Btn_Confirm_LightBElf)
+        Me.Controls.Add(Me.Cbo_LightBElf)
         Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Btn_ReturnElfSkills)
-        Me.Controls.Add(Me.Btn_Confirm_UrgSElf)
-        Me.Controls.Add(Me.Cbo_UrgSElf)
+        Me.Controls.Add(Me.Btn_Confirm_IceBElf)
+        Me.Controls.Add(Me.Cbo_IceBElf)
         Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.Btn_Confirm_SpiSElf)
-        Me.Controls.Add(Me.Cbo_SpiSElf)
+        Me.Controls.Add(Me.Btn_Confirm_FirBElf)
+        Me.Controls.Add(Me.Cbo_FirBElf)
         Me.Controls.Add(Me.PictureBox13)
         Me.Controls.Add(Me.Btn_Confirm_FusBElf)
         Me.Controls.Add(Me.Cbo_FusBElf)
@@ -590,11 +590,11 @@ Partial Class Magic_for_Elf
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Btn_ReturnElfSkills As Button
-    Friend WithEvents Btn_Confirm_UrgSElf As Button
-    Friend WithEvents Cbo_UrgSElf As ComboBox
+    Friend WithEvents Btn_Confirm_IceBElf As Button
+    Friend WithEvents Cbo_IceBElf As ComboBox
     Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents Btn_Confirm_SpiSElf As Button
-    Friend WithEvents Cbo_SpiSElf As ComboBox
+    Friend WithEvents Btn_Confirm_FirBElf As Button
+    Friend WithEvents Cbo_FirBElf As ComboBox
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents Btn_Confirm_FusBElf As Button
     Friend WithEvents Cbo_FusBElf As ComboBox
@@ -620,16 +620,16 @@ Partial Class Magic_for_Elf
     Friend WithEvents Btn_Confirm_MagMElf As Button
     Friend WithEvents Cbo_MagMElf As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Btn_Confirm_LightBElf As Button
+    Friend WithEvents Cbo_LightBElf As ComboBox
     Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents Btn_Confirm_ThunElf As Button
+    Friend WithEvents Cbo_ThunElf As ComboBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents Btn_Confirm_IceSpElf As Button
+    Friend WithEvents Cbo_IceSpElf As ComboBox
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents Btn_Confirm_FireBaElf As Button
+    Friend WithEvents Cbo_FireBaElf As ComboBox
+    Friend WithEvents PictureBox10 As PictureBox
 End Class
